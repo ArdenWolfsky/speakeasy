@@ -1,0 +1,55 @@
+# Site Settings
+title: Arden Wolfsky's Speakeasy
+tagline: Cheers, Awoo!
+email: your-email@domain.com
+description: >
+  The demo site for Mere Blog Theme, made for Jekyll and GitHub pages websites
+baseurl: ""
+url: "https://www.csrhymes.com"
+permalink: "/drinks/:slug"
+
+paginate: 6
+paginate_path: "/page:num"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown
+  - rouge
+
+exclude:
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+collections:
+  authors:
+    output: true

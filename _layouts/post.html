@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="columns is-centered">
+    <div class="column is-8-desktop is-10-tablet">
+        <div class="content">
+            {{ content }}
+        </div>
+
+        <div class="tags">
+            {% for tag in page.tags %}
+            <span class="tag is-primary">{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
