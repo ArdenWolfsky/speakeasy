@@ -154,3 +154,20 @@ h1 {
     color: #630100 !important;
     text-decoration: underline !important;
 }
+
+.tag-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ch;
+    margin-top: 20px;
+}
+
+.tag-list-item {
+    border: 1px solid;
+    padding: 1ch 2ch;
+    color: #F1D0AF;
+}
+
+.tag-list-item:hover {
+    color: #BA723B;
+}

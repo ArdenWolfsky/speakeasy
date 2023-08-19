@@ -51,5 +51,5 @@ defaults:
       layout: "author"
 
 collections:
-  authors:
+  tags:
     output: true

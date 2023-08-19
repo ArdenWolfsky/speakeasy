@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="front-intro" style="margin-bottom: 20px;">
+    Showing drinks tagged with {{ page.title }}.
+</div>
+<div class="columns is-multiline">
+    {% for post in site.posts%}
+        {% if post.tags contains page.tag %}
+        <div class="column is-4">
+            {% include post-item.html %}
+        </div>
+        {% endif %}
+    {% endfor %}
+
+    <div class="column is-12">
+        {% include pagination.html %}
+    </div>
+</div>
