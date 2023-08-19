@@ -32,6 +32,10 @@
     background-color: unset !important;
     color: #F1D0AF !important;
 }
+.navbar-brand {
+    justify-content: center;
+    align-items: center;
+}
 .navbar-brand p {
     color: #fff !important;
     font-family: "Montserrat", sans-serif !important;
@@ -44,6 +48,16 @@
     .navbar-menu {
         background-color: #630100 !important;
    }
+   .navbar-brand p {
+        padding-left: 20px;
+   }
+}
+.navbar-burger a {
+    border-color: #F1D0AF !important;
+    color: #F1D0AF !important;
+}
+.navbar-burger span {
+    background-color: #F1D0AF !important;
 }
 .section {
     background-color: #630100 !important;
@@ -80,6 +94,9 @@
    }
     .container {
         font-size: 1.0rem;
+   }
+   .navbar-brand p {
+       font-size: 1.8rem;
    }
 }
 @media screen and (min-width: 1400px) {
