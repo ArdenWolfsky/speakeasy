@@ -7,6 +7,9 @@
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <p class="title is-4">{{ post.title}}</p>
             </a>
+            {% for tag in post.tags %}
+            <span class="tag tag-front">{{ tag }}</span>
+            {% endfor %}
         </div>
     </div>
 </div>
