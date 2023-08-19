@@ -57,11 +57,16 @@
 
 .container {
     color: #F1D0AF !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
 }
 
 .page-title {
     font-size: 2.5rem;
     color: #F1D0AF;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
 }
 
 .hero {
@@ -71,8 +76,8 @@
 }
 
 .container h2 {
-    color: #F1D0AF !important;
-    font-size: 1.5em;
+    color: #BA723B !important;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -91,7 +96,7 @@ h1 {
 }
 
 .card-content .title {
-    font-size: 2.7em;
+    font-size: 2.7rem !important;
     font-family: Vijaya;
     color: #630100;
 }
@@ -133,7 +138,7 @@ h1 {
 
 .front-intro {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem !important;
 }
 
 .front-intro h1 {
@@ -170,4 +175,23 @@ h1 {
 
 .tag-list-item:hover {
     color: #BA723B;
+}
+
+.no-image {
+    background-image: unset !important;
+}
+
+hr {
+    background-color: #BA723B !important;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
