@@ -1,3 +1,9 @@
+@font-face {
+	font-family: Vijaya;
+	src: url(../font/vijaya.ttf);
+}
+
+
 .instagram-media {
 	margin: 0 auto !important;
 }
@@ -48,7 +54,7 @@
     background-size: cover;
 }
 
-.container #ingredients {
+.container #ingredients,  .container #shaker-1, .container #shaker-2 {
     color: #F1D0AF !important;
 }
 
@@ -58,4 +64,14 @@ h1 {
 
 .card-image {
     text-align: center;
+    background-color: #F1D0AF;
+}
+
+.card-content {
+    background-color: #F1D0AF;
+}
+
+.card-content .title {
+    font-size: 2.3em;
+    font-family: Vijaya;
 }
