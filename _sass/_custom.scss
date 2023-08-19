@@ -72,7 +72,39 @@
 .hero {
     background-color: #410100;
     background-image: url("/img/bg.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:top;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-position-y: -50px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero {
+        background-position-y: -50px;
+        padding-top: 9.5rem;
+        padding-bottom: 9.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-position-y: -50px;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        background-position-y: -20px;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
 }
 
 .container h2 {
@@ -99,6 +131,7 @@ h1 {
     font-size: 2.7rem !important;
     font-family: Vijaya;
     color: #630100;
+    font-weight: bold;
 }
 
 .content a {
