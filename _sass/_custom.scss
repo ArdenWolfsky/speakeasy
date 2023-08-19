@@ -1,29 +1,28 @@
 @font-face {
-	font-family: Vijaya;
-	src: url(../font/vijaya.ttf);
+    font-family: Vijaya;
+    src: url(../font/vijaya.ttf);
 }
-
 .instagram-media {
-	margin: 0 auto !important;
+    margin: 0 auto !important;
 }
-
 .tiktok-embed::before, .tiktok-embed::after {
-	display: none !important;
+    display: none !important;
 }
-
 .youtube-iframe {
-	text-align: center !important;
+    max-width: 100%;
+    overflow: hidden;
 }
-
+.youtube-iframe iframe {
+    width: 100%;
+    height: 100%;
+}
 .drink-image-post {
     width: 50%;
     text-align: center;
 }
-
 .navbar {
     background-color: #630100 !important;
 }
-
 .navbar-item {
     text-transform: uppercase;
     color: #fff;
@@ -33,217 +32,206 @@
     background-color: unset !important;
     color: #F1D0AF !important;
 }
-
-.navbar-brand {
-    font-size: 2.2rem;
-}
-
-.navbar-brand a {
+.navbar-brand p {
     color: #fff !important;
     font-family: "Montserrat", sans-serif !important;
     font-weight: 700;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
 }
-
 @media screen and (max-width: 1023px) {
     .navbar-menu {
         background-color: #630100 !important;
-    }
+   }
 }
-
 .section {
     background-color: #630100 !important;
 }
-
 .container {
     color: #F1D0AF !important;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
-
 .page-title {
     font-size: 2.5rem;
     color: #F1D0AF;
     font-family: "Inter", sans-serif;
     font-weight: bold;
 }
-
 .hero {
     background-color: #410100;
     background-image: url("/img/bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:top;
+    position: relative;
+    z-index: -1;
 }
-
 @media screen and (min-width: 1200px) {
     .hero {
         background-position-y: -50px;
-    }
+   }
 }
-
 @media screen and (max-width: 1200px) {
     .hero {
         background-position-y: -20px;
-    }
+   }
     .container {
         font-size: 1.0rem;
-    }
+   }
 }
-
 @media screen and (min-width: 1400px) {
     .hero {
         background-position-y: -50px;
         padding-top: 9.5rem;
         padding-bottom: 9.5rem;
-    }
+   }
 }
-
 @media screen and (max-width: 768px) {
     .hero {
         background-position-y: -20px;
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
-    }
+   }
 }
-
 @media screen and (max-width: 700px) {
     .about-me {
         flex-direction: column;
-    }
+   }
     .about-me-image {
         order: -1;
         margin-bottom: 20px;
-    }
+        width: 80%;
+   }
 }
-
 @media screen and (max-width: 600px) {
     .hero {
         background-position-y: -20px;
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
-    }
+   }
 }
-
 .container h2 {
     color: #BA723B !important;
     font-size: 2.5em;
     font-weight: bold;
 }
-
 h1 {
     font-family: Montserrat,sans-serif;
 }
-
-.card-image {
-    text-align: center;
-    background-color: #F1D0AF;
+.card {
+    overflow: hidden;
+    background-color: unset !important;
 }
-
+.card-image {
+    background-color: #F1D0AF;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+.card-image img {
+    display: block;
+   /* no whitespace */
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+.card:hover .card-image {
+    transform: scale(1.1);
+   /* You can adjust the scaling factor as needed */
+}
 .card-content {
     background-color: #F1D0AF;
     padding-top: 5px !important;
+    position: relative;
+    z-index: 2;
 }
-
 .card-content .title {
     font-size: 2.7rem !important;
     font-family: Vijaya;
     color: #630100;
     font-weight: bold;
+    margin-bottom: 0px !important;
 }
-
 .content a {
     color:#F1D0AF;
     text-decoration: underline;
 }
-
 .tag-front {
     background-color: #630100 !important;
     color: #F1D0AF !important;
     font-size: 1rem !important;
 }
-
 .pagination-previous {
     background-color: #F1D0AF !important;
     color: #630100 !important;
 }
-
 .pagination-link {
     background-color: #F1D0AF !important;
     color: #630100 !important;
     font-weight: bold;
     border-color: #F1D0AF !important;
 }
-
 .is-current {
     background-color: #BA723B !important;
     color: #630100 !important;
     font-weight: bold;
     border-color: #BA723B !important;
 }
-
 .pagination-next {
     background-color: #F1D0AF !important;
     color: #630100 !important;
 }
-
 .front-intro {
     text-align: center;
     font-size: 1.5rem !important;
 }
-
 .front-intro h1 {
     font-size: 2.0em;
     color: #F1D0AF !important;
 }
-
 .footer {
     background-color: #F1D0AF !important;
     padding-bottom: 3rem;
 }
-
 .footer p {
     color: #BA723B !important;
 }
-
 .footer a {
     color: #630100 !important;
     text-decoration: underline !important;
 }
-
 .tag-list-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 1ch;
     margin-top: 20px;
 }
-
 .tag-list-item {
     border: 1px solid;
     padding: 1ch 2ch;
     color: #F1D0AF;
 }
-
 .tag-list-item:hover {
     color: #BA723B;
 }
-
 .no-image {
     background-image: unset !important;
 }
-
 hr {
     background-color: #BA723B !important;
 }
-
 .about-text {
     flex: 1;
     padding-left: 20px;
 }
-
 .about-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
 }

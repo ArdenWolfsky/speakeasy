@@ -42,9 +42,10 @@ TAG_PAGE_TEMPLATE = '''---
 layout: tag
 tag: {tag}
 robots: noindex
-title: {tag}
+title: {title}
 ---'''
 for tag in all_tags:
   tag_fixed = unidecode(tag)
+  title = tag.replace('-', ' ')
   with open(TAG_DIR + tag.lower() + '.md', 'a', encoding='utf-8') as f:
-    f.write(TAG_PAGE_TEMPLATE.format(tag=tag))
+    f.write(TAG_PAGE_TEMPLATE.format(tag=tag, title=title))
