@@ -83,6 +83,15 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .hero {
+        background-position-y: -20px;
+    }
+    .container {
+        font-size: 1.0rem;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .hero {
         background-position-y: -50px;
@@ -93,9 +102,19 @@
 
 @media screen and (max-width: 768px) {
     .hero {
-        background-position-y: -50px;
+        background-position-y: -20px;
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-image {
+        order: -1;
+        margin-bottom: 20px;
     }
 }
 
