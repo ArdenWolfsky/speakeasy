@@ -261,3 +261,9 @@ hr {
     -o-animation: fadein 1.0s; /* Opera < 12.1 */
     animation: fadein 1.0s;
 }
+.page-tags {
+    margin-top: 30px;
+}
+.no-underline {
+    text-decoration: none !important;
+}
