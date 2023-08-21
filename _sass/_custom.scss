@@ -47,6 +47,7 @@
     text-transform: uppercase;
     color: #ba723b !important;
     font-weight: bold;
+    background-color: #630100 !important;
 }
 .navbar-item:hover {
     background-color: unset !important;
@@ -78,6 +79,7 @@
     font-weight: 400;
     font-family: "Inter", sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
 }
 .page-background {
     background-image: url("/img/design.jpg");
@@ -177,7 +179,7 @@
 }
 .front-intro h1 {
     font-size: 2em;
-    color: #f1d0af !important;
+    color: #ba723b !important;
     font-family: CopaseticNF-Bold;
 }
 .footer {
@@ -252,6 +254,10 @@ hr {
     text-align: center;
     font-family: Studebaker;
 }
-.container {
-    padding: 1rem;
+.fade-in {
+    -webkit-animation: fadein 1.0s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1.0s; /* Firefox < 16 */
+    -ms-animation: fadein 1.0s; /* Internet Explorer */
+    -o-animation: fadein 1.0s; /* Opera < 12.1 */
+    animation: fadein 1.0s;
 }
