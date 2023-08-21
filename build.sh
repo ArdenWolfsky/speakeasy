@@ -18,7 +18,7 @@ recursive_minify() {
 }
 
 # Set the root path
-main_folder="/var/www/arden-new/"
+main_folder="/var/www/arden-new"
 cd $main_folder
 # Pull any changes
 git pull
