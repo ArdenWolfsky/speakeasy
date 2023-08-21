@@ -45,6 +45,7 @@ robots: noindex
 title: {title}
 ---'''
 for tag in all_tags:
+  print('Generating page for ' + tag)
   tag_fixed = unidecode(tag)
   title = tag.replace('-', ' ')
   with open(TAG_DIR + tag.lower() + '.md', 'a', encoding='utf-8') as f:

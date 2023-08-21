@@ -53,3 +53,15 @@ defaults:
 collections:
   tags:
     output: true
+    permalink: /tag/:name
+
+exclude:
+  - build.*
+  - LICENSE.txt
+  - mere-blog-theme.gemspec
+  - package.json
+  - package-lock.json
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
