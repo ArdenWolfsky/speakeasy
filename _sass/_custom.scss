@@ -8,55 +8,72 @@
 }
 .instagram-media {
     margin: 0 auto !important;
+    min-width: auto !important;
 }
-.tiktok-embed::before, .tiktok-embed::after {
+.content blockquote {
+    border-left: unset !important;
+}
+.tiktok-embed {
+    padding: 0px !important;
+}
+.tiktok-embed::before,
+.tiktok-embed::after {
     display: none !important;
 }
 .youtube-iframe {
     max-width: 100%;
     overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .youtube-iframe iframe {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    display: block;
+}
+.drink-media {
+    text-align: center !important;
 }
 .navbar {
     background-color: #630100 !important;
 }
-.navbar p, .navbar a {
+.navbar p,
+.navbar a {
     font-family: CopaseticNF-Bold;
 }
 .navbar-item {
     text-transform: uppercase;
-    color: #BA723B !important;
+    color: #ba723b !important;
     font-weight: bold;
 }
 .navbar-item:hover {
     background-color: unset !important;
-    color: #F1D0AF !important;
+    color: #f1d0af !important;
 }
 .navbar-brand {
     justify-content: center;
     align-items: center;
 }
 .navbar-brand p {
-    color: #BA723B !important;
+    color: #ba723b !important;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2.7rem;
 }
 .navbar-burger a {
-    border-color: #BA723B !important;
-    color: #F1D0AF !important;
+    border-color: #ba723b !important;
+    color: #f1d0af !important;
 }
 .navbar-burger span {
-    background-color: #BA723B !important;
+    background-color: #ba723b !important;
 }
 .section {
     background-color: #630100 !important;
 }
 .container {
-    color: #F1D0AF !important;
+    color: #f1d0af !important;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Inter", sans-serif;
@@ -69,7 +86,7 @@
 }
 .page-title {
     font-size: 2.5rem;
-    color: #F1D0AF;
+    color: #f1d0af;
     font-family: "Inter", sans-serif;
     font-weight: bold;
 }
@@ -78,29 +95,29 @@
     background-image: url("/img/bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position:top;
+    background-position: top;
     position: relative;
     z-index: -1;
 }
 .container h2 {
-    color: #BA723B !important;
+    color: #ba723b !important;
     font-size: 2.5em;
     font-weight: bold;
-    font-family: CopaseticNF-Bold
+    font-family: CopaseticNF-Bold;
 }
 .card {
     overflow: hidden;
     background-color: unset !important;
 }
 .card-image {
-    background-color: #F1D0AF;
+    background-color: #f1d0af;
     display: inline-block;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
 }
 .card-image img {
     display: block;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     overflow: hidden;
     margin-bottom: -10px;
 }
@@ -108,7 +125,7 @@
     transform: scale(1.1);
 }
 .card-content {
-    background-color: #F1D0AF;
+    background-color: #f1d0af;
     padding-top: 5px !important;
     position: relative;
     z-index: 2;
@@ -122,36 +139,36 @@
     margin-top: 10px !important;
 }
 .content a {
-    color:#F1D0AF;
+    color: #f1d0af;
     text-decoration: underline;
 }
 .content h1 {
-    color: #BA723B;
+    color: #ba723b;
     font-size: 2.3em;
 }
 .tag-front {
     background-color: #630100 !important;
-    color: #F1D0AF !important;
+    color: #f1d0af !important;
     font-size: 1rem !important;
 }
 .pagination-previous {
-    background-color: #F1D0AF !important;
+    background-color: #f1d0af !important;
     color: #630100 !important;
 }
 .pagination-link {
-    background-color: #F1D0AF !important;
+    background-color: #f1d0af !important;
     color: #630100 !important;
     font-weight: bold;
-    border-color: #F1D0AF !important;
+    border-color: #f1d0af !important;
 }
 .is-current {
-    background-color: #BA723B !important;
+    background-color: #ba723b !important;
     color: #630100 !important;
     font-weight: bold;
-    border-color: #BA723B !important;
+    border-color: #ba723b !important;
 }
 .pagination-next {
-    background-color: #F1D0AF !important;
+    background-color: #f1d0af !important;
     color: #630100 !important;
 }
 .front-intro {
@@ -159,8 +176,8 @@
     font-size: 1.5rem !important;
 }
 .front-intro h1 {
-    font-size: 2.0em;
-    color: #F1D0AF !important;
+    font-size: 2em;
+    color: #f1d0af !important;
     font-family: CopaseticNF-Bold;
 }
 .footer {
@@ -168,10 +185,10 @@
     padding-bottom: 3rem;
 }
 .footer p {
-    color: #BA723B !important;
+    color: #ba723b !important;
 }
 .footer a {
-    color: #F1D0AF !important;
+    color: #f1d0af !important;
     text-decoration: underline !important;
 }
 .tag-list-wrapper {
@@ -183,10 +200,10 @@
 .tag-list-item {
     border: 1px solid;
     padding: 1ch 2ch;
-    color: #F1D0AF;
+    color: #f1d0af;
 }
 .tag-list-item:hover {
-    color: #BA723B;
+    color: #ba723b;
 }
 .tags {
     justify-content: center !important;
@@ -195,7 +212,7 @@
     background-image: unset !important;
 }
 hr {
-    background-color: #BA723B !important;
+    background-color: #ba723b !important;
 }
 .about-text {
     flex: 1;
@@ -236,5 +253,5 @@ hr {
     font-family: Studebaker;
 }
 .container {
-    padding: 1rem;;
+    padding: 1rem;
 }
