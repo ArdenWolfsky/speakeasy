@@ -1,13 +1,4 @@
 #!/usr/bin/env python
-# Filename: __plugins/compile_tags.py
-
-'''
-This script generates tag pages for all your post tags for a 
-Jekyll site. It is invoked from a plugin after post_write.
-Run it from the project root if testing.
-Current convention expected for tag names is r/[-\w\d]+/
-'''
-
 import glob
 import os
 from unidecode import unidecode
@@ -48,5 +39,5 @@ for tag in all_tags:
   print('Generating page for ' + tag)
   tag_fixed = unidecode(tag)
   title = tag.replace('-', ' ')
-  with open(TAG_DIR + tag.lower() + '.md', 'a', encoding='utf-8') as f:
+  with open(TAG_DIR + tag.lower() + '.md', 'w', encoding='utf-8') as f:
     f.write(TAG_PAGE_TEMPLATE.format(tag=tag, title=title))
