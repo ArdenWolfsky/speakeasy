@@ -278,3 +278,15 @@ hr {
 .no-underline {
     text-decoration: none !important;
 }
+.buttons {
+    justify-content: center !important;
+}
+.buttons .is-dark {
+    background-color: #ba723b !important;
+}
+.buttons a {
+    font-size: 1.2rem !important;
+}
+.buttons a:hover {
+    color: #630100 !important;
+}
