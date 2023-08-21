@@ -144,6 +144,10 @@
     color: #f1d0af;
     text-decoration: underline;
 }
+.content a:hover {
+    color: #ba723b;
+    text-decoration: underline;
+}
 .content h1 {
     color: #ba723b;
     font-size: 2.3em;
@@ -191,6 +195,10 @@
 }
 .footer a {
     color: #f1d0af !important;
+    text-decoration: underline !important;
+}
+.footer a:hover {
+    color: #ba723b !important;
     text-decoration: underline !important;
 }
 .tag-list-wrapper {

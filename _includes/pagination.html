@@ -2,12 +2,12 @@
     <ul class="pagination-list">
         {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
-                <li><a class="pagination-link is-current">{{ page }}</a></li>
+                <li><a class="pagination-link is-current no-underline">{{ page }}</a></li>
             {% else %}
                 {% if page == 1 %}
-                    <li><a href="{{ site.baseurl }}/" class="pagination-link">{{ page }}</a></li>
+                    <li><a href="{{ site.baseurl }}/" class="pagination-link no-underline">{{ page }}</a></li>
                 {% else %}
-                    <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination-link">{{ page }}</a></li>
+                    <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}" class="pagination-link no-underline">{{ page }}</a></li>
                 {% endif %}
             {% endif %}
         {% endfor %}

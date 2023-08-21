@@ -18,6 +18,6 @@ Looking for something specific?
 <div class="tag-list-wrapper">
 {% for tag in all_tags_array %}
    {% assign tag_display = tag | replace: '-', ' ' %}
-   <a href="{{ site.url }}/tag/{{ tag | downcase }}" class="tag-list-item">{{ tag_display }}</a>
+   <a href="{{ site.url }}/tag/{{ tag | downcase }}" class="tag-list-item no-underline">{{ tag_display }}</a>
 {% endfor %}
 </div>

@@ -34,6 +34,7 @@ layout: tag
 tag: {tag}
 robots: noindex
 title: {title}
+description: "All drinks tagged with {title}."
 ---'''
 for tag in all_tags:
   print('Generating page for ' + tag)
