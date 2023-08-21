@@ -3,10 +3,8 @@
 {% include head.html %}
 <body>
 {% include navbar.html %}
-{% unless page.hide_hero %}
-    {% include hero.html %}
-{% endunless %}
-<section class="section">
+{% include hero.html %}
+<section class="section page-background">
     <div class="container">
         {{ content }}
     </div>

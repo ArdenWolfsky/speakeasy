@@ -67,6 +67,12 @@
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Inter", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.page-background {
+    background-image: url("/img/design.jpg");
+    background-repeat: repeat;
+    background-size: 20%;
 }
 .page-title {
     font-size: 2.5rem;
@@ -254,4 +260,7 @@ hr {
 }
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
+}
+.header-container {
+    background-color: #630100 !important;
 }
