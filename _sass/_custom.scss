@@ -1,6 +1,10 @@
 @font-face {
-    font-family: Vijaya;
-    src: url(../font/vijaya.ttf);
+    font-family: Studebaker;
+    src: url(/assets/font/studebaker.regular.ttf);
+}
+@font-face {
+    font-family: CopaseticNF-Bold;
+    src: url(/assets/font/CopaseticNF-Bold.ttf);
 }
 .instagram-media {
     margin: 0 auto !important;
@@ -19,9 +23,12 @@
 .navbar {
     background-color: #630100 !important;
 }
+.navbar p, .navbar a {
+    font-family: CopaseticNF-Bold;
+}
 .navbar-item {
     text-transform: uppercase;
-    color: #fff;
+    color: #BA723B !important;
     font-weight: bold;
 }
 .navbar-item:hover {
@@ -33,27 +40,17 @@
     align-items: center;
 }
 .navbar-brand p {
-    color: #fff !important;
-    font-family: "Montserrat", sans-serif !important;
+    color: #BA723B !important;
     font-weight: 700;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2.2rem;
-}
-@media screen and (max-width: 1023px) {
-    .navbar-menu {
-        background-color: #630100 !important;
-   }
-   .navbar-brand p {
-        padding-left: 20px;
-   }
+    font-size: 2.7rem;
 }
 .navbar-burger a {
-    border-color: #F1D0AF !important;
+    border-color: #BA723B !important;
     color: #F1D0AF !important;
 }
 .navbar-burger span {
-    background-color: #F1D0AF !important;
+    background-color: #BA723B !important;
 }
 .section {
     background-color: #630100 !important;
@@ -85,60 +82,11 @@
     position: relative;
     z-index: -1;
 }
-@media screen and (min-width: 1200px) {
-    .hero {
-        background-position-y: -50px;
-   }
-}
-@media screen and (max-width: 1200px) {
-    .hero {
-        background-position-y: -20px;
-   }
-    .container {
-        font-size: 1.0rem;
-   }
-   .navbar-brand p {
-       font-size: 1.8rem;
-   }
-}
-@media screen and (min-width: 1400px) {
-    .hero {
-        background-position-y: -50px;
-        padding-top: 9.5rem;
-        padding-bottom: 9.5rem;
-   }
-}
-@media screen and (max-width: 768px) {
-    .hero {
-        background-position-y: -20px;
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
-   }
-}
-@media screen and (max-width: 700px) {
-    .about-me {
-        flex-direction: column;
-   }
-    .about-me-image {
-        order: -1;
-        margin-bottom: 20px;
-        width: 80%;
-   }
-}
-@media screen and (max-width: 600px) {
-    .hero {
-        background-position-y: -20px;
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
-   }
-}
 .container h2 {
     color: #BA723B !important;
     font-size: 2.5em;
     font-weight: bold;
-}
-h1 {
-    font-family: Montserrat,sans-serif;
+    font-family: CopaseticNF-Bold
 }
 .card {
     overflow: hidden;
@@ -167,17 +115,19 @@ h1 {
 }
 .card-content .title {
     font-size: 2.7rem !important;
-    font-family: Vijaya;
+    font-family: Studebaker;
     color: #630100;
     font-weight: bold;
-    margin-bottom: 0px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
 }
 .content a {
     color:#F1D0AF;
     text-decoration: underline;
 }
 .content h1 {
-    color:#F1D0AF;
+    color: #BA723B;
+    font-size: 2.3em;
 }
 .tag-front {
     background-color: #630100 !important;
@@ -211,16 +161,17 @@ h1 {
 .front-intro h1 {
     font-size: 2.0em;
     color: #F1D0AF !important;
+    font-family: CopaseticNF-Bold;
 }
 .footer {
-    background-color: #F1D0AF !important;
+    background-color: #630100 !important;
     padding-bottom: 3rem;
 }
 .footer p {
     color: #BA723B !important;
 }
 .footer a {
-    color: #630100 !important;
+    color: #F1D0AF !important;
     text-decoration: underline !important;
 }
 .tag-list-wrapper {
@@ -255,6 +206,9 @@ hr {
     justify-content: space-between;
     align-items: center;
 }
+.about-me-image {
+    width: 30%;
+}
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -267,9 +221,6 @@ hr {
 .footer-container {
     background-color: unset !important;
 }
-.column {
-    padding: 1rem;
-}
 .drink-image-post {
     display: flex;
     justify-content: center;
@@ -280,11 +231,10 @@ hr {
 .drink-image-post img {
     width: 50%;
 }
-@media screen and (max-width: 700px) {
-    .drink-image-post img {
-        width: 80%;
-   }
-}
 .drink-title-post {
     text-align: center;
+    font-family: Studebaker;
+}
+.container {
+    padding: 1rem;;
 }
