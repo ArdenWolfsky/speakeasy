@@ -1,11 +1,8 @@
 # Site Settings
 title: Arden Wolfsky's Speakeasy
 tagline: Cheers, Awoo!
-email: your-email@domain.com
-description: >
-  The demo site for Mere Blog Theme, made for Jekyll and GitHub pages websites
 baseurl: ""
-url: "https://www.csrhymes.com"
+url: "http://localhost:5000"
 permalink: "/drinks/:slug"
 
 paginate: 9
