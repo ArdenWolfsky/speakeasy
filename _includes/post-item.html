@@ -8,7 +8,8 @@
             <p class="title is-4">{{ post.title}}</p>
             <div class="tags">
                 {% for tag in post.tags %}
-                <span class="tag tag-front">{{ tag }}</span>
+                    {% assign tag_display = tag | replace: '-', ' ' %}
+                    <span class="tag tag-front">{{ tag_display }}</span>
                 {% endfor %}
             </div>    
         </div>
