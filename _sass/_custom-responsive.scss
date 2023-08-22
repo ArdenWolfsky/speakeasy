@@ -52,7 +52,12 @@
 }
 @media screen and (max-width: 1500px) {
     .page-background {
-        background-size: 40%;
+        background-size: 50%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .page-background {
+        background-size: 60%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -102,7 +107,7 @@
         padding-left: 0px;
     }
     .page-background {
-        background-size: 100%;
+        background-size: 120%;
     }
 }
 @media screen and (max-width: 372px) {
