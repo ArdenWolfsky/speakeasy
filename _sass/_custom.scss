@@ -1,10 +1,10 @@
 @font-face {
-    font-family: Studebaker;
-    src: url(/assets/font/studebaker.regular.ttf);
-}
-@font-face {
     font-family: CopaseticNF-Bold;
     src: url(/assets/font/CopaseticNF-Bold.ttf);
+}
+@font-face {
+    font-family: DyerArtsandCrafts;
+    src: url(/assets/font/dyer-arts-and-crafts.normal.ttf);
 }
 .instagram-media {
     margin: 0 auto !important;
@@ -41,7 +41,7 @@
 }
 .navbar p,
 .navbar a {
-    font-family: CopaseticNF-Bold;
+    font-family: DyerArtsandCrafts;
 }
 .navbar-item {
     text-transform: uppercase;
@@ -105,7 +105,7 @@
     color: #ba723b !important;
     font-size: 2.5em;
     font-weight: bold;
-    font-family: CopaseticNF-Bold;
+    font-family: DyerArtsandCrafts;
 }
 .card {
     overflow: hidden;
@@ -135,7 +135,7 @@
 }
 .card-content .title {
     font-size: 2.7rem !important;
-    font-family: Studebaker;
+    font-family: CopaseticNF-Bold;
     color: #630100;
     font-weight: bold;
     margin-bottom: 10px !important;
@@ -188,7 +188,7 @@
 .front-intro h1 {
     font-size: 2em;
     color: #ba723b !important;
-    font-family: CopaseticNF-Bold;
+    font-family: DyerArtsandCrafts;
 }
 .footer {
     background-color: #630100 !important;
@@ -264,7 +264,7 @@ hr {
 }
 .drink-title-post {
     text-align: center;
-    font-family: Studebaker;
+    font-family: CopaseticNF-Bold;
 }
 .fade-in {
     -webkit-animation: fadein 1.0s; /* Safari, Chrome and Opera > 12.1 */
