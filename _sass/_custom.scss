@@ -84,7 +84,7 @@
 .page-background {
     background-image: url("/img/design.jpg");
     background-repeat: repeat;
-    background-size: 20%;
+    background-size: 40%;
 }
 .page-title {
     font-size: 2.5rem;
@@ -110,6 +110,7 @@
 .card {
     overflow: hidden;
     background-color: unset !important;
+    position: relative;
 }
 .card-image {
     background-color: #f1d0af;
@@ -292,4 +293,23 @@ hr {
 }
 .post-date {
     text-align: center;
+}
+.left-top-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transform: rotate(-180deg);
+    width: 50%;
+}
+.right-top-border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    transform: rotate(-90deg);
+    width: 50%;
+}
+.smaller {
+    width: 30%;
 }
