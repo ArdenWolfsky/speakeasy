@@ -124,7 +124,7 @@
     overflow: hidden;
     margin-bottom: -10px;
 }
-.card:hover .card-image {
+.card:hover .card-drink-image {
     transform: scale(1.1);
 }
 .card-content {
@@ -308,6 +308,21 @@ hr {
     right: 0;
     z-index: 3;
     transform: rotate(-90deg);
+    width: 50%;
+}
+.left-bottom-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transform: rotate(90deg);
+    width: 50%;
+}
+.right-bottom-border {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
     width: 50%;
 }
 .smaller {
