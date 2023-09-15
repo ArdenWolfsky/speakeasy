@@ -1,5 +1,5 @@
 # Set the root path
-$main_folder = "C:\Users\hyperdefined\Desktop\ardenwolfsky.com\"
+$main_folder = "F:\Everything\Development\wolfskymedia\websites\speakeasy.ardenwolfsky.com\"
 Set-Location -Path $main_folder
 # Pull any changes
 git pull
