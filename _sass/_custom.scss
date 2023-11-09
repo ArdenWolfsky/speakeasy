@@ -126,7 +126,7 @@
     overflow: hidden;
     margin-bottom: -10px;
 }
-.card:hover .card-drink-image {
+.card-image:hover .card-drink-image {
     transform: scale(1.1);
 }
 .card-content {
@@ -223,6 +223,9 @@
 }
 .tags {
     justify-content: center !important;
+}
+.tags a:hover {
+    color: #ba723b !important;
 }
 .no-image {
     background-image: unset !important;

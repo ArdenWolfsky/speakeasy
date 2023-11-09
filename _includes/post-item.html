@@ -1,19 +1,20 @@
-<a href="{{ site.baseurl }}{{ post.url }}" class="no-underline">
 <div class="card">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="no-underline">
     <div class="card-image">
-        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="right-top-border">
-        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="left-top-border">
-        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="right-bottom-border">
-        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="left-bottom-border">
+        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="card-border right-top-border">
+        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="card-border left-top-border">
+        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="card-border right-bottom-border">
+        <img src="{{ site.baseurl}}/img/borders/drink-border.png" class="card-border left-bottom-border">
         <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" width="100%" class="card-drink-image">
     </div>
+    </a>
     <div class="card-content">
         <div class="has-text-centered">
             <p class="title is-4">{{ post.title}}</p>
             <div class="tags">
                 {% for tag in post.tags %}
                     {% assign tag_display = tag | replace: '-', ' ' %}
-                    <span class="tag tag-front">{{ tag_display }}</span>
+                    <a href="{{ site.url }}/tag/{{ tag | downcase }}" class="tag tag-front no-underline">{{ tag_display }}</a>
                 {% endfor %}
             </div>    
         </div>
