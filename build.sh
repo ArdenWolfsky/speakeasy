@@ -22,6 +22,6 @@ pip3 install unidecode
 # Generate the tag pages
 python3 scripts/generate_tags.py
 # Compile the site
-bundle add webrick
+bundle install
 bundle exec jekyll build
 recursive_minify "$main_folder/_site"
