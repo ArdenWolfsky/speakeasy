@@ -16,17 +16,11 @@ recursive_minify() {
         fi
     done
 }
-
-# Set the root path
-main_folder="/var/www/ardenwolfsky.com"
-cd $main_folder
-# Pull any changes
-git pull
-# Delete these files
-rm -r _site/
-rm -r tag/
+npm install html-minifier
+# Install python modules
+pip3 install unidecode
 # Generate the tag pages
 python3 scripts/generate_tags.py
 # Compile the site
-bundle exec jekyll build
+jekyll build
 recursive_minify "$main_folder/_site"
