@@ -16,7 +16,7 @@ recursive_minify() {
         fi
     done
 }
-npm install html-minifier
+npm install html-minifier -g
 # Install python modules
 pip3 install unidecode
 # Generate the tag pages
