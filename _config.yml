@@ -2,7 +2,7 @@
 title: Arden Wolfsky's Speakeasy
 tagline: Cheers, Awoo!
 baseurl: ""
-url: "http://localhost:5000"
+url: "https://ardenwolfsky.com"
 permalink: "/drinks/:slug"
 
 paginate: 9
