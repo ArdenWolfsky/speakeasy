@@ -24,4 +24,4 @@ python3 scripts/generate_tags.py
 # Compile the site
 bundle install
 bundle exec jekyll build
-recursive_minify "$main_folder/_site"
+recursive_minify "_site"
