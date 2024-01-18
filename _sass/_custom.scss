@@ -154,6 +154,8 @@
 .content h1 {
     color: #ba723b;
     font-size: 2.3em;
+    text-align: center;
+    font-family: CopaseticNF-Bold;
 }
 .tag-front {
     background-color: #630100 !important;
@@ -267,10 +269,6 @@ hr {
 .drink-image-post img {
     width: 50%;
 }
-.drink-title-post {
-    text-align: center;
-    font-family: CopaseticNF-Bold;
-}
 .fade-in {
     -webkit-animation: fadein 1.0s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1.0s; /* Firefox < 16 */
@@ -332,4 +330,18 @@ hr {
 }
 .smaller {
     width: 30%;
+}
+.drink-image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.drink-image-item {
+    margin: 5px;
+    box-sizing: border-box;
+}
+.drink-image-item img {
+    width: 100%;
+    height: auto;
 }

@@ -1,30 +1,33 @@
-@media screen and (max-width: 700px) {
-    .drink-image-post img {
-        width: 80%;
+@media screen and (max-width: 1400px) {
+    .drink-image-item {
+        flex: 0 0 calc(25% - 10px);
+    }
+    .navbar-item {
+        font-size: 0.9em;
     }
 }
-@media screen and (max-width: 1023px) {
-    .navbar-menu {
-        background-color: #630100 !important;
+@media screen and (min-width: 1400px) {
+    .hero {
+        background-position-y: -50px;
+        padding-top: 9.5rem;
+        padding-bottom: 9.5rem;
+    }
+    .drink-image-item {
+        flex: 0 0 calc(33% - 10px);
+    }
+}
+@media screen and (max-width: 1215px) {
+    .navbar-item {
+        font-size: 0.7em;
     }
     .navbar-brand p {
-        padding-left: 10px;
+        font-size: 2.3rem;
     }
 }
 @media screen and (max-width: 1200px) {
-    .navbar-item {
-        font-size: 1.3em !important;
-    }
     .post-date {
         font-size: 1.2rem;
     }
-}
-@media screen and (min-width: 1200px) {
-    .hero {
-        background-position-y: -50px;
-    }
-}
-@media screen and (max-width: 1200px) {
     .hero {
         background-position-y: -20px;
     }
@@ -34,30 +37,53 @@
     .navbar-brand p {
         font-size: 1.8rem;
     }
+    .navbar-item {
+        font-size: 1.1em;
+    }
     .card-content .title {
-        font-size: 2rem !important;
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 2.7em;
+    }
+    .about-text {
+        font-size: 1.2rem;
+    }
+    .drink-image-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+    .bigger {
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 900px) {
-    .card-content .title {
-        font-size: 1.7rem !important;
-    }
-}
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .hero {
         background-position-y: -50px;
-        padding-top: 9.5rem;
-        padding-bottom: 9.5rem;
+    }
+    .drink-image-item {
+        flex: 0 0 calc(33% - 10px);
     }
 }
-@media screen and (max-width: 1500px) {
-    .page-background {
-        background-size: 50%;
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: #630100;
+        display: none;
+    }
+    .navbar-brand p {
+        padding-left: 10px;
+    }
+    .drink-image-item {
+        flex: 0 0 calc(50% - 10px);
     }
 }
 @media screen and (max-width: 1000px) {
     .page-background {
         background-size: 60%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .card-content .title {
+        font-size: 1.7rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -67,11 +93,27 @@
         padding-bottom: 3.5rem;
     }
     .card-content .title {
-        font-size: 2rem !important;
+        font-size: 2rem;
     }
     .post-date {
         margin-bottom: 20px;
         font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    .content p, .content a {
+        font-size: 1.2rem;
+    }
+    .content h1 {
+        font-size: 1.9em;
+    }
+    .content h2 {
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .drink-image-post img {
+        width: 80%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -100,6 +142,9 @@
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
     }
+    .drink-image-item {
+        flex: 0 0 calc(75% - 10px);
+    }
 }
 @media screen and (max-width: 426px) {
     .navbar-brand p {
@@ -113,16 +158,5 @@
 @media screen and (max-width: 372px) {
     .navbar-brand p {
         font-size: 1.2rem;
-    }
-}
-@media screen and (max-width: 760px) {
-    .content p, .content a {
-        font-size: 1.2rem !important;
-    }
-    .content h1 {
-        font-size: 1.9em !important;
-    }
-    .content h2 {
-        font-size: 1.7em !important;
     }
 }
