@@ -5,7 +5,7 @@ description: "Welcome Fluffs! It’s great to meet you! I’m Arden Wolfsky. A f
 slug: about
 ---
 <div class="about-me">
-<img src="{{ site.url }}/img/arden/about-me.jpg" class="about-me-image" alt="Arden Wolfsky">
+<img src="{{ site.cdn }}/img/arden/about-me.jpg" class="about-me-image" alt="Arden Wolfsky">
 <div class="about-text">
 
 <h2>Arden Wolfsky</h2>

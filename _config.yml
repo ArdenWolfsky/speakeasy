@@ -8,6 +8,8 @@ permalink: "/drinks/:slug"
 paginate: 9
 paginate_path: "/page:num"
 
+cdn: "https://ardenwolfsky.nyc3.cdn.digitaloceanspaces.com/speakeasy"
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate

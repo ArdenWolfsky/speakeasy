@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }} - {{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/img/arden/icon.jpg">
+    <link rel="shortcut icon" type="image/png" href="{{ site.cdn }}/img/arden/icon.jpg">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     {%- include google-analytics.html -%}
 
@@ -12,14 +12,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ site.title }} - {{ page.title }}">
     {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta name="twitter:description" content="Arden Wolfsky's speakeasy.">{% endif %}
-    {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}">{% else %}<meta property="og:image" content="{{ site.url }}/img/bg.png">{% endif %}
+    {% if page.image %}<meta property="og:image" content="{{ site.cdn }}{{ page.image }}">{% else %}<meta property="og:image" content="{{ site.cdn }}/img/bg.png">{% endif %}
 
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="ardenwolfsky.com">
     <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
     <meta name="twitter:title" content="{{ site.title }} - {{ page.title }}">
     {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% else %}<meta name="twitter:description" content="Arden Wolfsky's speakeasy.">{% endif %}
-    {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">{% else %}<meta name="twitter:image" content="{{ site.url }}/img/bg.png">
+    {% if page.image %}<meta name="twitter:image" content="{{ site.cdn }}{{ page.image }}">{% else %}<meta name="twitter:image" content="{{ site.cdn }}/img/bg.png">
     {% endif %}
 
 </head>
