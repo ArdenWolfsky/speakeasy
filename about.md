@@ -3,12 +3,12 @@ layout: page
 title: About
 description: "Cheers! I’m Arden Wolfsky, a fluffy, red wolf, Wolfsky hybrid who is a Pastry chef by day and serves up custom cocktails by night! I am a classically trained Certified Executive Pastry chef who specializes in chocolates, custom cakes, and unique dessert designs."
 slug: about
-image: /img/arden/about3.jpg
+image: be64af39-5ba3-41ac-877d-e3bb25a47000
 border: true
 ---
 <h1>About</h1>
 <div class="drink-image-post">
-<img src="{{ site.cdn }}/img/arden/about3.jpg" class="about-me-image" alt="Arden Wolfsky">
+<img src="{{ site.cdn }}{{ page.image }}/public" class="about-me-image" alt="Arden Wolfsky">
 </div>
 
 <p>Cheers! I’m Arden Wolfsky, a fluffy, red wolf, Wolfsky hybrid who is a Pastry chef by day and serves up custom cocktails by night! I am a classically trained Certified Executive Pastry chef who specializes in chocolates, custom cakes, and unique dessert designs.</p>

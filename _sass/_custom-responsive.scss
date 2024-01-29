@@ -85,6 +85,13 @@
     .card-content .title {
         font-size: 1.7rem;
     }
+    .news-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-child {
+        width: 90%;
+    }
 }
 @media screen and (max-width: 768px) {
     .hero {

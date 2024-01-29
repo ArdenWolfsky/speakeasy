@@ -96,7 +96,7 @@
 }
 .hero {
     background-color: #410100;
-    background-image: url("https://cdn.ardenwolfsky.com/speakeasy/img/bg.png");
+    background-image: url("https://ardenwolfsky.com/cdn-cgi/imagedelivery/GWpL3YoIe0wj5_zHZfF0dA/09976bb8-2c7b-4bc7-ab3e-acc45f167a00/public");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
@@ -344,4 +344,34 @@ hr {
 .drink-image-item img {
     width: 100%;
     height: auto;
+}
+.news-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+.news-child {
+    display: inline-block;
+    border: 1px solid #ba723b;
+    background-color: #410100;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 33%;
+}
+.news-child h3 {
+    color: #f1d0af;
+    margin-bottom: 0px;
+}
+.news-entry {
+    text-align: left;
+}
+.news-entry ul {
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+}
+.news-entry h4 {
+    color: #ba723b;
+}
+.news-title h3 {
+    margin-bottom: 0.3em;
 }
