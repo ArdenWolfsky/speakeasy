@@ -364,6 +364,10 @@ hr {
 }
 .news-entry {
     text-align: left;
+    margin-bottom: 20px;
+}
+.news-entry p {
+    font-size: 1rem;
 }
 .news-entry ul {
     margin-top: 0.5em;
@@ -371,6 +375,7 @@ hr {
 }
 .news-entry h4 {
     color: #ba723b;
+    font-size: 1em;
 }
 .news-title h3 {
     margin-bottom: 0.3em;
