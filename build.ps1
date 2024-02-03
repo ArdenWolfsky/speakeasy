@@ -7,6 +7,7 @@ Set-Location -Path $main_folder
 Remove-Item -Path "_site" -Recurse -Force
 # Generate the tag pages
 python3 scripts/generate_tags.py
+python3 scripts/generate_category.py
 # Compile the site
 bundle exec jekyll build
 

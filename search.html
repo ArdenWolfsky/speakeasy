@@ -5,17 +5,28 @@ description: "Looking for something specific? Start here."
 slug: search
 ---
 <h1>Search</h1>
-Looking for something specific?
+Looking for something specific? Serach for it here!
 
+{% assign all_categories_concatenated = "" %}
+{% for post in site.posts %}
+  {% assign post_categories = post.categories | join: " " %}
+  {% assign all_categories_concatenated = all_categories_concatenated | append: " " | append: post_categories %}
+{% endfor %}
+{% assign all_categories_array = all_categories_concatenated | split: " " | uniq | sort %}
+<h2>Categories</h2>
+<div class="tag-list-wrapper">
+{% for tag in all_categories_array %}
+   {% assign category_display = tag | replace: '-', ' ' %}
+   <a href="{{ site.url }}/category/{{ tag | downcase }}" class="tag-list-item no-underline">{{ category_display }}</a>
+{% endfor %}
+</div>
 {% assign all_tags_concatenated = "" %}
-
 {% for post in site.posts %}
   {% assign post_tags = post.tags | join: " " %}
   {% assign all_tags_concatenated = all_tags_concatenated | append: " " | append: post_tags %}
 {% endfor %}
-
 {% assign all_tags_array = all_tags_concatenated | split: " " | uniq | sort %}
-
+<h2>Type</h2>
 <div class="tag-list-wrapper">
 {% for tag in all_tags_array %}
    {% assign tag_display = tag | replace: '-', ' ' %}

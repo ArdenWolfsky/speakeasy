@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import glob
 import os
-from unidecode import unidecode
 
 POST_DIR = '_posts/'
 TAG_DIR = 'tag/'
@@ -43,8 +42,7 @@ pagination:
   tag: {tag}
 ---'''
 for tag in all_tags:
-  print('Generating page for ' + tag)
-  tag_fixed = unidecode(tag)
+  print('Generating tag page for ' + tag)
   title = tag.replace('-', ' ')
   with open(TAG_DIR + tag.lower() + '.md', 'w', encoding='utf-8') as f:
     f.write(TAG_PAGE_TEMPLATE.format(tag=tag, title=title, tag_lower=tag.lower()))
