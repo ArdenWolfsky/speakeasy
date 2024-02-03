@@ -16,6 +16,14 @@ layout: default
                 </span>
             {% endfor %}
         </div>
+        <div class="tags page-tags">
+            {% for category in page.categories %}
+                {% assign category_display = category | replace: '-', ' ' %}
+                <span class="tag tag-front">
+                    <a href="{{ site.baseurl }}/category/{{ category | downcase }}" class="no-underline">{{ category_display }}</a>
+                </span>
+            {% endfor %}
+        </div>
 
         <div class="post-date">
             <p>Posted on {{ page.date | date: "%B %-d, %Y" }}</p>
