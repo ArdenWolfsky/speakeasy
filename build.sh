@@ -17,10 +17,9 @@ recursive_minify() {
     done
 }
 npm install html-minifier -g
-# Install python modules
-pip3 install unidecode
-# Generate the tag pages
+# Generate the pages
 python3 scripts/generate_tags.py
+python3 scripts/generate_category.py
 # Compile the site
 bundle install
 bundle exec jekyll build
