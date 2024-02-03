@@ -5,14 +5,24 @@ baseurl: ""
 url: "https://ardenwolfsky.com"
 permalink: "/drinks/:slug"
 
-paginate: 9
-paginate_path: "/page:num"
+pagination:
+  enabled: true
+  per_page: 9
+  permalink: '/page:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+  collection: 'posts'  
 
 cdn: "https://ardenwolfsky.com/cdn-cgi/imagedelivery/GWpL3YoIe0wj5_zHZfF0dA/"
 
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-feed
   - jekyll-seo-tag
   - kramdown
@@ -33,11 +43,6 @@ defaults:
       layout: post
       show_sidebar: true
       border: true
-
-collections:
-  tags:
-    output: true
-    permalink: /tag/:name
 
 exclude:
   - build.*

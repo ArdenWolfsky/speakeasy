@@ -3,7 +3,7 @@
 {% include head.html %}
 <body>
 {% include navbar.html %}
-{% if page.url == "/" %}
+{% if page.layout == 'homepage' %}
 {% include hero.html %}
 {% endif %}
 <section class="section page-background">

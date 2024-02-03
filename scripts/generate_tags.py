@@ -35,10 +35,16 @@ tag: {tag}
 robots: noindex
 title: {title}
 description: "All drinks tagged with {title}."
+permalink: /tag/{tag_lower}
+pagination: 
+  enabled: true
+  collection: posts
+  per_page: 9
+  tag: {tag}
 ---'''
 for tag in all_tags:
   print('Generating page for ' + tag)
   tag_fixed = unidecode(tag)
   title = tag.replace('-', ' ')
   with open(TAG_DIR + tag.lower() + '.md', 'w', encoding='utf-8') as f:
-    f.write(TAG_PAGE_TEMPLATE.format(tag=tag, title=title))
+    f.write(TAG_PAGE_TEMPLATE.format(tag=tag, title=title, tag_lower=tag.lower()))
