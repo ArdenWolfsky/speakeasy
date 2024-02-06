@@ -21,6 +21,7 @@ all_tags = sorted(list(set(all_tags)))
 # Remove old tag pages
 old_tags = glob.glob(TAG_DIR + '*.md')
 for tag in old_tags:
+  print('Removing old tag page ' + str(tag))
   os.remove(tag)
 
 # Create tag directory if it does not exist
@@ -40,7 +41,9 @@ pagination:
   collection: posts
   per_page: 9
   tag: {tag}
----'''
+---
+Showing all drinks that contain {title}.
+'''
 for tag in all_tags:
   print('Generating tag page for ' + tag)
   title = tag.replace('-', ' ')

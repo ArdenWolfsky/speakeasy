@@ -2,6 +2,9 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+<div class="content centered">
+{{ content }}
+</div>
 {% assign lowercase_display_name = page.title | downcase %}
 <div class="columns is-multiline">
   {% for post in paginator.posts %}

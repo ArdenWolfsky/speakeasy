@@ -21,6 +21,7 @@ all_categories = sorted(list(set(all_categories)))
 # Remove old type pages
 old_categories = glob.glob(CATEGORY_DIR + '*.md')
 for category in old_categories:
+  print('Removing old tag page ' + str(category))
   os.remove(category)
 
 # Create tag directory if it does not exist
@@ -39,7 +40,9 @@ pagination:
   collection: posts
   per_page: 9
   category: {category}
----'''
+---
+Showing all drinks from the {title} category.
+'''
 for category in all_categories:
   print('Generating category page for ' + category)
   title = category.replace('-', ' ')
