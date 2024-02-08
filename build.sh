@@ -5,7 +5,7 @@ recursive_minify() {
 
     for file in "$folder"/*.html; do
         if [ -f "$file" ]; then
-            echo $file
+            echo "Minifying: $file"
             html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype "$file" -o "$file"
         fi
     done
@@ -18,6 +18,7 @@ recursive_minify() {
 }
 npm install html-minifier -g
 # Generate the pages
+echo 'Running python scripts to generate pages...'
 python3 scripts/generate_tags.py
 python3 scripts/generate_category.py
 # Compile the site

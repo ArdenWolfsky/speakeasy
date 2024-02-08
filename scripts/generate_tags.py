@@ -28,6 +28,8 @@ for tag in old_tags:
 if not os.path.exists(TAG_DIR):
   os.makedirs(TAG_DIR)
 
+print('Tags: ' + str(all_tags))
+
 # Write new tag pages.
 TAG_PAGE_TEMPLATE = '''---
 layout: tag

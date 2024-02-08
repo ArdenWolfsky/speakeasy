@@ -28,6 +28,8 @@ for category in old_categories:
 if not os.path.exists(CATEGORY_DIR):
   os.makedirs(CATEGORY_DIR)
 
+print('Categories: ' + str(all_categories))
+
 # Write new tag pages.
 TYPE_PAGE_TEMPLATE = '''---
 layout: category
