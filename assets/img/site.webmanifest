@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Arden Wolfsky's Speakeasy",
+    "short_name": "Arden Wolfsky's Speakeasy",
     "icons": [
         {
             "src": "/assets/img/android-chrome-192x192.png",
@@ -14,6 +14,6 @@
         }
     ],
     "theme_color": "#630100",
-    "background_color": "#ffffff",
+    "background_color": "#630100",
     "display": "standalone"
 }
