@@ -6,7 +6,7 @@ slug: about
 image: be64af39-5ba3-41ac-877d-e3bb25a47000
 border: true
 ---
-<h1>About</h1>
+<h1>{{ page.title }}</h1>
 <div class="drink-image-post">
 <img src="{{ site.cdn }}{{ page.image }}/public" class="about-me-image" alt="Arden Wolfsky">
 </div>
