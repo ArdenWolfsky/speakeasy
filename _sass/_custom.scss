@@ -300,6 +300,13 @@ hr {
 .post-date {
     text-align: center;
 }
+.no-drag {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 .left-top-border {
     position: absolute;
     top: 0;
