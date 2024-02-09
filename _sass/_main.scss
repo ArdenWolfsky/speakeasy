@@ -34,9 +34,6 @@ $radius-large: 0;
 $radius-small: 0;
 
 @import "../node_modules/bulma/bulma.sass";
-@import "layout";
-@import "syntax";
-@import "intro";
 @import "custom";
 @import "custom-responsive";
 @import "custom-keyframes";
