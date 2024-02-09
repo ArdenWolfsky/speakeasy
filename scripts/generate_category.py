@@ -33,7 +33,7 @@ print('Categories: ' + str(all_categories))
 # Write new tag pages.
 TYPE_PAGE_TEMPLATE = '''---
 layout: category
-robots: noindex
+noindex: true
 title: {title}
 description: "Drinks from the {title} category."
 permalink: /category/{category_lower}

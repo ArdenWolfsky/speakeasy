@@ -34,7 +34,7 @@ print('Tags: ' + str(all_tags))
 TAG_PAGE_TEMPLATE = '''---
 layout: tag
 tag: {tag}
-robots: noindex
+noindex: true
 title: {title}
 description: "All drinks tagged with {title}."
 permalink: /tag/{tag_lower}

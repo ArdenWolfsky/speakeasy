@@ -42,7 +42,6 @@ defaults:
       type: "posts"
     values:
       layout: post
-      show_sidebar: true
       border: true
 
 exclude:
