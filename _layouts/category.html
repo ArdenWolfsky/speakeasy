@@ -13,14 +13,16 @@ layout: default
     </div>
   {% endfor %}
 </div>
+{% if paginator.total_pages > 1 %}
 <nav class="pagination is-centered">
   <ul class="pagination-list">
-  {% for page in (1..paginator.total_pages) %}
-    <li>
-      <a href="{% if page == 1 %}{{ site.url }}/category/{{ lowercase_display_name }}{% else %}{{ site.url }}/category/{{ lowercase_display_name }}/page{{ page }}{% endif %}" class="pagination-link no-underline {% if page == paginator.page %}is-current{% endif %}">
-      {% if page == 1 %}{{ page }}{% else %}{{ page }}{% endif %}
-      </a>
-    </li>
+    {% for page in (1..paginator.total_pages) %}
+      <li>
+        <a href="{% if page == 1 %}{{ site.url }}/category/{{ lowercase_display_name }}{% else %}{{ site.url }}/category/{{ lowercase_display_name }}/page{{ page }}{% endif %}" class="pagination-link no-underline {% if page == paginator.page %}is-current{% endif %}">
+          {{ page }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </nav>
+{% endif %}
