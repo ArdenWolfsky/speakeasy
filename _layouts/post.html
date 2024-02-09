@@ -1,57 +1,47 @@
 ---
 layout: default
 ---
-<div class="column">
-    <div class="content">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-
-        <hr>
-
-        <div class="tags page-tags">
-            {% for tag in page.tags %}
-                {% assign tag_display = tag | replace: '-', ' ' %}
-                <span class="tag tag-front">
-                    <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}" class="no-underline">{{ tag_display }}</a>
-                </span>
-            {% endfor %}
-        </div>
-        <div class="tags page-tags">
-            {% for category in page.categories %}
-                {% assign category_display = category | replace: '-', ' ' %}
-                <span class="tag tag-front">
-                    <a href="{{ site.baseurl }}/category/{{ category | downcase }}" class="no-underline">{{ category_display }}</a>
-                </span>
-            {% endfor %}
-        </div>
-
-        <div class="post-date">
-            <p>Posted on {{ page.date | date: "%B %-d, %Y" }}</p>
-        </div>    
-
-        <nav class="pagination is-centered">
-            {% assign current_index = 0 %}
-            {% for post in site.posts %}
-                {% if post.url == page.url %}
-                    {% assign current_index = forloop.index0 %}
-                    {% break %}
-                {% endif %}
-            {% endfor %}
-
-            {% if current_index > 0 %}
-                {% assign previous_index = current_index | minus: 1 %}
-                <a href="{{ site.posts[previous_index].url }}" class="pagination-previous is-info"><i class="fas fa-chevron-left"></i></a>
-            {% else %}
-                <p class="pagination-previous" disabled><i class="fas fa-chevron-left"></i></p>
-            {% endif %}
-
-            {% assign end_post = site.posts.size | minus: 1 %}
-            {% if current_index < end_post %}
-                {% assign next_index = current_index | plus: 1 %}
-                <a href="{{ site.posts[next_index].url }}" class="pagination-next is-info"><i class="fas fa-chevron-right"></i></a>
-            {% else %}
-                <p class="pagination-next" disabled><i class="fas fa-chevron-right"></i></p>
-            {% endif %}
-        </nav>
-    </div>
+<h1>{{ page.title }}</h1>
+{{ content }}
+<hr>
+<div class="tags page-tags">
+{% for tag in page.tags %}
+{% assign tag_display = tag | replace: '-', ' ' %}
+    <span class="tag tag-front">
+        <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}" class="no-underline">{{ tag_display }}</a>
+    </span>
+{% endfor %}
 </div>
+<div class="tags page-tags">
+{% for category in page.categories %}
+{% assign category_display = category | replace: '-', ' ' %}
+    <span class="tag tag-front">
+        <a href="{{ site.baseurl }}/category/{{ category | downcase }}" class="no-underline">{{ category_display }}</a>
+    </span>
+{% endfor %}
+</div>
+<div class="post-date">
+    <p>Posted on {{ page.date | date: "%B %-d, %Y" }}</p>
+</div>    
+<nav class="pagination is-centered">
+{% assign current_index = 0 %}
+{% for post in site.posts %}
+    {% if post.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+{% if current_index > 0 %}
+    {% assign previous_index = current_index | minus: 1 %}
+    <a href="{{ site.posts[previous_index].url }}" class="pagination-previous is-info"><i class="fas fa-chevron-left"></i></a>
+{% else %}
+    <p class="pagination-previous" disabled><i class="fas fa-chevron-left"></i></p>
+{% endif %}
+{% assign end_post = site.posts.size | minus: 1 %}
+{% if current_index < end_post %}
+    {% assign next_index = current_index | plus: 1 %}
+    <a href="{{ site.posts[next_index].url }}" class="pagination-next is-info"><i class="fas fa-chevron-right"></i></a>
+{% else %}
+    <p class="pagination-next" disabled><i class="fas fa-chevron-right"></i></p>
+{% endif %}
+</nav>

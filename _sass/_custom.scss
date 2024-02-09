@@ -1,10 +1,10 @@
 @font-face {
-    font-family: CopaseticNF-Bold;
-    src: url(/assets/font/CopaseticNF-Bold.ttf);
+    font-family: GradoGradooNF;
+    src: url(/assets/font/gradogradoonf.regular.ttf);
 }
 @font-face {
     font-family: DyerArtsandCrafts;
-    src: url(/assets/font/dyer-arts-and-crafts.normal.ttf);
+    src: url(/assets/font/ritzyremix.regular.ttf);
 }
 .instagram-media {
     margin: 0 auto !important;
@@ -61,7 +61,7 @@
     color: #ba723b !important;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
 }
 .navbar-burger a {
     border-color: #ba723b !important;
@@ -136,8 +136,8 @@
     z-index: 2;
 }
 .card-content .title {
-    font-size: 2.7rem !important;
-    font-family: CopaseticNF-Bold;
+    font-size: 2.7rem;
+    font-family: GradoGradooNF;
     color: #630100;
     font-weight: bold;
     margin-bottom: 10px !important;
@@ -155,7 +155,7 @@
     color: #ba723b;
     font-size: 2.3em;
     text-align: center;
-    font-family: CopaseticNF-Bold;
+    font-family: GradoGradooNF;
 }
 .tag-front {
     background-color: #630100 !important;
@@ -228,6 +228,9 @@
 }
 .tags a:hover {
     color: #ba723b !important;
+}
+.card .tags {
+    margin-top: 20px;
 }
 .no-image {
     background-image: unset !important;
