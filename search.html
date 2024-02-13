@@ -6,8 +6,7 @@ slug: search
 border: true
 ---
 <h1>{{ page.title }}</h1>
-<p class="centered">Looking for something specific? Search for it here!</p><p class="centered">Search by category or drink type.</p>
-
+<p class="centered">Looking for something specific? Search for it here!</p><p class="centered">Search by category, drink type, or search everything.</p>
 {% assign all_categories_concatenated = "" %}
 {% for post in site.posts %}
   {% assign post_categories = post.categories | join: " " %}
@@ -34,3 +33,18 @@ border: true
    <a href="{{ site.url }}/tag/{{ tag | downcase }}" class="tag-list-item no-underline">{{ tag_display }}</a>
 {% endfor %}
 </div>
+<h2>Search Everything</h2>
+<p>Looking for something specific? Start typing away!</p>
+<div class="search-container" id="search-container">
+  <input type="text" class="search-input" id="search-input" placeholder="Search for drink...">
+  <div class="results-container" id="results-container"></div>
+</div>
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  noResultsText: 'No drinks were found.',
+  searchInput: document.getElementById('search-input'),
+  searchResultTemplate: '<div class="search-result"><a href="{url}"><p>{title}</p></a></div>',
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})</script>

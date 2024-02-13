@@ -396,3 +396,30 @@ hr {
 .smaller-text {
     font-size: smaller;
 }
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.search-input {
+    border-color: #f1d0af;
+    background-color: #410100;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #f1d0af;
+    font-size: 1em;
+}
+.search-input::placeholder {
+    color: #f1d0af;
+    opacity: 1;
+}
+.search-result {
+    font-family: GradoGradooNF;
+}
+.search-result a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
