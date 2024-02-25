@@ -14,7 +14,7 @@ noindex: true
 <p>We do not utilize your data for any purposes other than site analytics. No user data is collected or entered on this site.</p>
 
 ## Analytics
-<p>We employ analytics to measure traffic to the site. We utilize <a href="https://policies.google.com/technologies/partner-sites">Google Analytics</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Analytics</a>. We do not collect any identifying information about individual users.</p>
+<p>We employ analytics to measure traffic to the site. We utilize <a href="https://umami.is/privacy">Umami (self hosted)</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Analytics</a>. We do not collect any identifying information about individual users.</p>
 
 <p>We may use cookies to gather information about your interactions with our website for analytics purposes. These cookies are used by our analytics providers (such as Google Analytics and Cloudflare Analytics) to track and analyze how users engage with our site. By using our website, you consent to the use of these cookies for analytics purposes.</p>
 
