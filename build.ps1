@@ -10,14 +10,7 @@ If (Test-Path "_site") {
 Write-Output 'Running python scripts to generate pages...'
 python3 scripts/generate_tags.py
 python3 scripts/generate_category.py
-# Compile the site
-bundle exec jekyll build
-
-$files = Get-ChildItem -Path "$main_folder\_site\*.html" -Recurse
-
-foreach ($file in $files) {
-    Write-Output ('Minifying: ' + $file.fullName)
-    if ($file.PSIsContainer -eq $false) {
-        & html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype "$file" -o "$file"
-    }
-}
+# Serve the site
+$env:JEKYLL_ENV = "development"
+Write-Output "Running: $env:JEKYLL_ENV"
+bundle exec jekyll serve
