@@ -21,10 +21,9 @@ npm install html-minifier -g
 echo 'Running python scripts to generate pages...'
 python3 scripts/generate_tags.py
 python3 scripts/generate_category.py
-# Compile the site
-bundle install
 # Set the target environment
 export JEKYLL_ENV=production
 echo "Running: $JEKYLL_ENV"
+# Build the site
 bundle exec jekyll build
 recursive_minify "_site"
