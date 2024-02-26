@@ -24,7 +24,7 @@ python3 scripts/generate_category.py
 # Compile the site
 bundle install
 # Set the target environment
-export JEKYLL_ENV=development
+export JEKYLL_ENV=production
 echo "Running: $JEKYLL_ENV"
 bundle exec jekyll build
 recursive_minify "_site"
