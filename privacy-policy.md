@@ -6,7 +6,7 @@ slug: privacy-policy
 noindex: true
 ---
 # {{ page.title }}
-<p>Last updated: 2/9/2024. We maybe update this policy from time to time.</p>
+<p>Last updated: 2/25/2024. We maybe update this policy from time to time.</p>
 <p>'We' is referred to the site developer and team behind Arden Wolfsky.</p>
 <p>Contact: <a href="mailto:contact@hyper.lol">contact@hyper.lol</a></p>
 
