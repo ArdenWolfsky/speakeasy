@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{{ site.baseurl }}/assets/img/browserconfig.xml">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    {% if site.environment == "production" %}{%- include analytics.html -%}{% endif %}
+    {% if jekyll.environment == "production" %}{%- include analytics.html -%}{% endif %}
 
     <meta name="description" content="{{ page.description }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">

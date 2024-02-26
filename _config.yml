@@ -20,8 +20,6 @@ pagination:
 
 # Image CDN root
 cdn: "https://ardenwolfsky.com/cdn-cgi/imagedelivery/GWpL3YoIe0wj5_zHZfF0dA/"
-# Specify if dev or production
-environment: "{{ ENV['JEKYLL_ENV'] }}"
 
 plugins:
   - jekyll-sitemap
