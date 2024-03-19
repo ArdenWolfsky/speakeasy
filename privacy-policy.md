@@ -6,7 +6,7 @@ slug: privacy-policy
 noindex: true
 ---
 # {{ page.title }}
-<p>Last updated: 2/25/2024. We maybe update this policy from time to time.</p>
+<p>Last updated: 3/19/2024. We maybe update this policy from time to time.</p>
 <p>'We' is referred to the site developer and team behind Arden Wolfsky.</p>
 <p>Contact: <a href="mailto:contact@hyper.lol">contact@hyper.lol</a></p>
 
@@ -16,7 +16,7 @@ noindex: true
 ## Analytics
 <p>We employ analytics to measure traffic to the site. We utilize <a href="https://umami.is/privacy">Umami (self hosted)</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Analytics</a>. We do not collect any identifying information about individual users.</p>
 
-<p>We may use cookies to gather information about your interactions with our website for analytics purposes. These cookies are used by our analytics providers (such as Google Analytics and Cloudflare Analytics) to track and analyze how users engage with our site. By using our website, you consent to the use of these cookies for analytics purposes.</p>
+<p>We may use cookies to gather information about your interactions with our website for analytics purposes. These cookies are used by our analytics provider (Cloudflare Analytics) to track and analyze how users engage with our site. By using our website, you consent to the use of these cookies for analytics purposes.</p>
 
 ## Third-Party Content
 <p>This page may contain embedded third-party content. All such content is subject to the respective privacy policies of the services involved.</p>

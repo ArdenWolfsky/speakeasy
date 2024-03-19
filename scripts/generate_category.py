@@ -37,7 +37,7 @@ noindex: true
 title: {title}
 description: "Drinks from the {title} category."
 permalink: /category/{category_lower}
-pagination: 
+pagination:
   enabled: true
   collection: posts
   per_page: 9

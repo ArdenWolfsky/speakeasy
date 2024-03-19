@@ -38,7 +38,7 @@ noindex: true
 title: {title}
 description: "All drinks tagged with {title}."
 permalink: /tag/{tag_lower}
-pagination: 
+pagination:
   enabled: true
   collection: posts
   per_page: 9
