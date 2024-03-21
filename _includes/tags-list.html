@@ -1,0 +1,13 @@
+{% assign all_tags_concatenated = "" %}
+{% for post in site.posts %}
+  {% assign post_tags = post.tags | join: " " %}
+  {% assign all_tags_concatenated = all_tags_concatenated | append: " " | append: post_tags %}
+{% endfor %}
+{% assign all_tags_array = all_tags_concatenated | split: " " | uniq | sort %}
+<h2>Type</h2>
+<div class="tag-list-wrapper">
+{% for tag in all_tags_array %}
+   {% assign tag_display = tag | replace: '-', ' ' %}
+   <a href="{{ site.url }}/tag/{{ tag | downcase }}" class="tag-list-item no-underline">{{ tag_display }}</a>
+{% endfor %}
+</div>

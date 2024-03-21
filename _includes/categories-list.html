@@ -1,0 +1,13 @@
+{% assign all_categories_concatenated = "" %}
+{% for post in site.posts %}
+  {% assign post_categories = post.categories | join: " " %}
+  {% assign all_categories_concatenated = all_categories_concatenated | append: " " | append: post_categories %}
+{% endfor %}
+{% assign all_categories_array = all_categories_concatenated | split: " " | uniq | sort %}
+<h2>Categories</h2>
+<div class="tag-list-wrapper">
+{% for tag in all_categories_array %}
+   {% assign category_display = tag | replace: '-', ' ' %}
+   <a href="{{ site.url }}/category/{{ tag | downcase }}" class="tag-list-item no-underline">{{ category_display }}</a>
+{% endfor %}
+</div>

@@ -1,0 +1,15 @@
+<h2>Search Everything</h2>
+<p>Looking for something specific? Serach here! You can search by title or drink ingredients.</p>
+<div class="search-container" id="search-container">
+  <input type="text" class="search-input" id="search-input" placeholder="Search for drink...">
+  <div class="results-container" id="results-container"></div>
+</div>
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  noResultsText: 'No drinks were found.',
+  searchInput: document.getElementById('search-input'),
+  searchResultTemplate: '<div class="search-result"><a href="{url}"><p>{title}</p></a></div>',
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})</script>
