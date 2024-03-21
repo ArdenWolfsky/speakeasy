@@ -1,5 +1,4 @@
 #!/bin/bash
-
 recursive_minify() {
     local folder="$1"
 
@@ -16,15 +15,18 @@ recursive_minify() {
         fi
     done
 }
+# Install minifier
 npm install html-minifier -g
-# Generate the pages
+# Generate tag and category pages
 echo 'Running python scripts to generate pages...'
 python3 scripts/generate_tags.py
 python3 scripts/generate_category.py
-# Compile the site
+# Install gems
 bundle install
 # Set the target environment
 export JEKYLL_ENV=production
 echo "Running: $JEKYLL_ENV"
+# Build the site
 bundle exec jekyll build
+# Minify the pages
 recursive_minify "_site"
