@@ -111,7 +111,7 @@
 }
 .card {
     overflow: hidden;
-    background-color: unset !important;
+    background-color: unset;
     position: relative;
     --bulma-card-radius: unset;
 }
@@ -132,7 +132,7 @@
 }
 .card-content {
     background-color: #f1d0af;
-    padding-top: 5px !important;
+    padding-top: 5px;
     position: relative;
     z-index: 2;
 }
