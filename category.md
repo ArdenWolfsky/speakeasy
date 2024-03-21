@@ -1,6 +1,8 @@
 ---
-layout: category
+layout: page
 slug: category
-redirect_to: /search/
+redirect: /search/
 index: false
+title: "Redirecting..."
 ---
+## {{ page.title }}

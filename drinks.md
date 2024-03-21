@@ -1,8 +1,8 @@
 ---
 layout: page
-slug: tag
-redirect: /search/
+slug: drinks
+redirect: /
 index: false
 title: "Redirecting..."
 ---
-## {{ page.title }}
+# {{ page.title }}
