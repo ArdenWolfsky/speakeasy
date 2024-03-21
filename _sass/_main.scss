@@ -33,7 +33,7 @@ $radius: 0;
 $radius-large: 0;
 $radius-small: 0;
 
-@import "../node_modules/bulma/bulma.sass";
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 @import "custom";
 @import "custom-responsive";
 @import "custom-keyframes";
