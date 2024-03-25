@@ -38,6 +38,7 @@ noindex: true
 title: {title}
 description: "All drinks tagged with {title}."
 permalink: /tag/{tag_lower}
+sitemap: false
 pagination:
   enabled: true
   collection: posts

@@ -37,6 +37,7 @@ noindex: true
 title: {title}
 description: "Drinks from the {title} category."
 permalink: /category/{category_lower}
+sitemap: false
 pagination:
   enabled: true
   collection: posts

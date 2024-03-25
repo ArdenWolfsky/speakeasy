@@ -38,7 +38,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: post
       border: true
 
 exclude:
