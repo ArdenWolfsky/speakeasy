@@ -42,7 +42,7 @@
         font-size: 1.6rem;
     }
     .navbar-item {
-        font-size: 1.0em;
+        font-size: 1em;
         padding: 0.5rem 0.5rem;
     }
     .card-content .title {
@@ -61,7 +61,7 @@
         font-size: 2rem;
     }
     .news-title h3 {
-        font-size: 2.0em;
+        font-size: 2em;
     }
     .news-entry h4 {
         font-size: 1.3em;
@@ -136,11 +136,12 @@
     }
 }
 @media screen and (max-width: 760px) {
-    .content p, .content a {
+    .content p,
+    .content a {
         font-size: 1.2rem;
     }
     .content h1 {
-        font-size: 3.0em;
+        font-size: 3em;
     }
     .content h2 {
         font-size: 1.7em;
@@ -149,13 +150,13 @@
         font-size: 1.2rem;
     }
     .news-title h3 {
-        font-size: 2.0em;
+        font-size: 2em;
     }
     .news-entry h4 {
         font-size: 1.3em;
     }
     .front-intro h1 {
-        font-size: 2.0em;
+        font-size: 2em;
     }
     .search-result p {
         font-size: 1.7em;
