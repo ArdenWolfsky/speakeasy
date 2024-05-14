@@ -37,7 +37,7 @@
     text-align: center !important;
 }
 .navbar {
-    background-color: #630100 !important;
+    background-color: #630100;
 }
 .navbar p,
 .navbar a {
@@ -45,36 +45,35 @@
 }
 .navbar-item {
     text-transform: uppercase;
-    color: #ba723b !important;
+    color: #ba723b;
     font-weight: bold;
-    background-color: #630100 !important;
 }
 .navbar-item:hover {
     background-color: unset !important;
-    color: #f1d0af !important;
+    color: #f1d0af;
 }
 .navbar-brand {
     justify-content: center;
     align-items: center;
 }
 .navbar-brand p {
-    color: #ba723b !important;
+    color: #ba723b;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2.3rem;
 }
 .navbar-burger a {
-    border-color: #ba723b !important;
-    color: #f1d0af !important;
+    border-color: #ba723b;
+    color: #f1d0af;
 }
 .navbar-burger span {
-    background-color: #ba723b !important;
+    background-color: #ba723b;
 }
 .section {
-    background-color: #630100 !important;
+    background-color: #630100;
 }
 .container {
-    color: #f1d0af !important;
+    color: #f1d0af;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Inter", sans-serif;
@@ -97,7 +96,7 @@
     z-index: -1;
 }
 .container h2 {
-    color: #ba723b !important;
+    color: #ba723b;
     font-size: 2em;
     font-weight: bold;
     font-family: DyerArtsandCrafts;
@@ -152,56 +151,58 @@
     font-family: GradoGradooNF;
 }
 .tag-front {
-    background-color: #630100 !important;
-    color: #f1d0af !important;
-    font-size: 1rem !important;
+    background-color: #630100;
+    font-size: 1rem;
 }
 .pagination-previous {
-    background-color: #f1d0af !important;
+    background-color: #f1d0af;
     color: #630100 !important;
-    margin: 4px !important;
-    padding-left: 0.75em !important;
-    padding-right: 0.75em !important;
+    margin: 4px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
 }
 .pagination-link {
-    background-color: #f1d0af !important;
+    background-color: #f1d0af;
     color: #630100 !important;
     font-weight: bold;
-    border-color: #f1d0af !important;
+    border-color: #f1d0af;
 }
 .is-current {
-    background-color: #ba723b !important;
+    background-color: #ba723b;
     color: #630100 !important;
     font-weight: bold;
-    border-color: #ba723b !important;
+    border-color: #ba723b;
 }
 .pagination-next {
-    background-color: #f1d0af !important;
+    background-color: #f1d0af;
     color: #630100 !important;
+    margin: 4px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
 }
 .front-intro {
     text-align: center;
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
 }
 .front-intro h1 {
     font-size: 3em;
-    color: #ba723b !important;
+    color: #ba723b;
     font-family: DyerArtsandCrafts;
 }
 .footer {
-    background-color: #410100 !important;
+    background-color: #410100;
     padding-bottom: 3rem;
 }
 .footer p {
-    color: #ba723b !important;
+    color: #ba723b;
 }
 .footer a {
-    color: #f1d0af !important;
-    text-decoration: underline !important;
+    color: #f1d0af;
+    text-decoration: underline;
 }
 .footer a:hover {
-    color: #ba723b !important;
-    text-decoration: underline !important;
+    color: #ba723b;
+    text-decoration: underline;
 }
 .tag-list-wrapper {
     display: flex;
@@ -218,19 +219,16 @@
     color: #ba723b;
 }
 .tags {
-    justify-content: center !important;
+    justify-content: center;
 }
 .tags a:hover {
-    color: #ba723b !important;
+    color: #ba723b;
 }
 .card .tags {
     margin-top: 20px;
 }
-.no-image {
-    background-image: unset !important;
-}
 hr {
-    background-color: #ba723b !important;
+    background-color: #ba723b;
 }
 .about-text {
     flex: 1;
@@ -248,13 +246,10 @@ hr {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .header-container {
-    background-color: #630100 !important;
-}
-.hero-container {
-    background-color: unset !important;
+    background-color: #630100;
 }
 .footer-container {
-    background-color: unset !important;
+    background-color: unset;
 }
 .drink-image-post {
     display: flex;
@@ -280,16 +275,16 @@ hr {
     text-decoration: none !important;
 }
 .buttons {
-    justify-content: center !important;
+    justify-content: center;
 }
 .buttons .is-dark {
-    background-color: #ba723b !important;
+    background-color: #ba723b;
 }
 .buttons a {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
 }
 .buttons a:hover {
-    color: #630100 !important;
+    color: #630100;
 }
 .post-date {
     text-align: center;
