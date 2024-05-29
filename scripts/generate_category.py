@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# This was taken from https://rfong.github.io/rflog/2020/02/28/jekyll-tags/
+
 import glob
 import os
 
@@ -30,7 +33,7 @@ if not os.path.exists(CATEGORY_DIR):
 
 print('Categories: ' + str(all_categories))
 
-# Write new tag pages.
+# Write new tag pages
 TYPE_PAGE_TEMPLATE = '''---
 layout: category
 noindex: true

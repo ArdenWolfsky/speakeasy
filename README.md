@@ -5,8 +5,8 @@ Extremely modified version of [mere-blog-theme](https://github.com/chrisrhymes/m
 ## Setup
 These should work, but are fine tuned for my own use case.
 1. Run the build scripts
-    * `build.sh` for Linux.
-    * `build.ps1` for Windows.
+    * `build.sh` for Linux. Mainly used for production use via Cloudflare Pages.
+    * `build.ps1` for Windows. Mainly used for development use on Windows.
 ## Scripts
 * `generate_tag.py` and `generate_category.py`
 

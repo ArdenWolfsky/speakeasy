@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# This was taken from https://rfong.github.io/rflog/2020/02/28/jekyll-tags/
+
 import glob
 import os
 
@@ -30,7 +33,7 @@ if not os.path.exists(TAG_DIR):
 
 print('Tags: ' + str(all_tags))
 
-# Write new tag pages.
+# Write new tag pages
 TAG_PAGE_TEMPLATE = '''---
 layout: tag
 tag: {tag}
