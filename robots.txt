@@ -1,2 +1,2 @@
 Sitemap: https://ardenwolfsky.com/sitemap.xml
-Disallow: https://ardenwolfsky.com/cdn-cgi/imagedelivery/GWpL3YoIe0wj5_zHZfF0dA/335011c4-7e9e-4f96-d5c9-9f8a2d512700/*
+Disallow: https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/e4b4a7cb-1328-40f5-15f4-cea1e5157c00/*

@@ -18,7 +18,7 @@ pagination:
   collection: 'posts'
 
 # Image CDN root
-cdn: "https://ardenwolfsky.com/cdn-cgi/imagedelivery/GWpL3YoIe0wj5_zHZfF0dA/"
+cdn: "https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/"
 
 plugins:
   - jekyll-sitemap
