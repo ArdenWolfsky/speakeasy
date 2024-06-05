@@ -1,2 +1,2 @@
-Sitemap: https://ardenwolfsky.com/sitemap.xml
+Sitemap: https://drinks.ardenwolfsky.com/sitemap.xml
 Disallow: https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/e4b4a7cb-1328-40f5-15f4-cea1e5157c00/*

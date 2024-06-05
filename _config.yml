@@ -1,7 +1,7 @@
 # Site Settings
 title: Arden Wolfsky's Speakeasy
 tagline: Cheers, Awoo!
-url: "https://ardenwolfsky.com"
+url: "https://drinks.ardenwolfsky.com"
 permalink: "/drinks/:slug"
 
 pagination:
