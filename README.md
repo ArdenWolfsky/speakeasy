@@ -1,4 +1,4 @@
-# Arden Wolfsky's Website
+# Arden Wolfsky's Drink Catalog
 
 Extremely modified version of [mere-blog-theme](https://github.com/chrisrhymes/mere-blog-theme).
 
