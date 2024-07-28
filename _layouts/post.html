@@ -35,7 +35,7 @@ layout: default
     {% assign previous_index = current_index | minus: 1 %}
     <a href="{{ site.posts[previous_index].url }}" class="pagination-previous is-info"><i class="fas fa-chevron-left"></i></a>
 {% else %}
-    <p class="pagination-previous" disabled><i class="fas fa-chevron-left"></i></p>
+    <a class="pagination-previous" disabled><i class="fas fa-chevron-left"></i></a>
 {% endif %}
 {% assign end_post = site.posts.size | minus: 1 %}
 {% if current_index < end_post %}

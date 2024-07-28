@@ -161,6 +161,12 @@
     padding-left: 0.75em;
     padding-right: 0.75em;
 }
+.pagination-previous:disabled, .pagination-previous[disabled] {
+    background-color: #630100;
+}
+.pagination-previous:disabled, .pagination-previous[disabled] svg {
+    color: #f1d0af;
+}
 .pagination-link {
     background-color: #f1d0af;
     color: #630100 !important;
