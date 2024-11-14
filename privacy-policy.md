@@ -6,7 +6,7 @@ slug: privacy-policy
 noindex: true
 ---
 # {{ page.title }}
-<p>Last updated: 3/19/2024. We maybe update this policy from time to time.</p>
+<p>Last updated: 11/14/2024. We maybe update this policy from time to time.</p>
 <p>'We' is referred to the site developer and team behind Arden Wolfsky.</p>
 <p>Contact: <a href="mailto:contact@hyper.lol">contact@hyper.lol</a></p>
 
@@ -25,4 +25,5 @@ noindex: true
 <li><a href="https://twitter.com/en/privacy">Twitter (or X)</a></li>
 <li><a href="https://policies.google.com/privacy">YouTube</a></li>
 <li><a href="https://help.instagram.com/155833707900388">Instagram</a></li>
+<li><a href="https://bsky.social/about/support/privacy-policy">Bluesky</a></li>
 </ul>
