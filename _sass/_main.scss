@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@use "custom";
+@use "custom-responsive";
+@use "custom-keyframes";
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap');
 $family-sans-serif: 'Inter', sans-serif;
@@ -32,8 +36,3 @@ $pagination-current-border-color: $dark;
 $radius: 0;
 $radius-large: 0;
 $radius-small: 0;
-
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
-@import "custom";
-@import "custom-responsive";
-@import "custom-keyframes";
