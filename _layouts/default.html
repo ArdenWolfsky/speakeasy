@@ -8,13 +8,11 @@
 {% endif %}
 <section class="section page-background">
     <div class="container container-page fade-in">
-        <div class="content">
-            {% if page.border %}
-            <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="no-drag right-top-border smaller">
-            <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="no-drag left-top-border smaller">
-            {% endif %}
-            {{ content }}
-        </div>
+        {% if page.border %}
+        <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="no-drag right-top-border smaller">
+        <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="no-drag left-top-border smaller">
+        {% endif %}
+        {{ content }}
     </div>
 </section>
 <div class="section footer">
