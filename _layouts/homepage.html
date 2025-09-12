@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-
-<div class="content">
-    {{ content }}
-</div>
+{{ content }}
 <div class="columns is-multiline">
     {% for post in paginator.posts limit:10 %}
     <div class="column is-4">
