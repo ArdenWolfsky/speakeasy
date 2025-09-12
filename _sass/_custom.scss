@@ -1,3 +1,6 @@
+// import our colors
+@use "colors" as c;
+
 @font-face {
     font-family: GradoGradooNF;
     src: url(/assets/font/gradogradoonf.regular.ttf);
@@ -41,7 +44,7 @@
     text-align: center !important;
 }
 .navbar {
-    background-color: #630100;
+    background-color: c.$arden-red;
 }
 .navbar p,
 .navbar a {
@@ -49,35 +52,35 @@
 }
 .navbar-item {
     text-transform: uppercase;
-    color: #ba723b;
+    color: c.$arden-tan;
     font-weight: bold;
 }
 .navbar-item:hover {
     background-color: unset !important;
-    color: #f1d0af;
+    color: c.$arden-cream;
 }
 .navbar-brand {
     justify-content: center;
     align-items: center;
 }
 .navbar-brand p {
-    color: #ba723b;
+    color: c.$arden-tan;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2.3rem;
 }
 .navbar-burger a {
-    border-color: #ba723b;
-    color: #f1d0af;
+    border-color: c.$arden-tan;
+    color: c.$arden-cream;
 }
 .navbar-burger span {
-    background-color: #ba723b;
+    background-color: c.$arden-tan;
 }
 .section {
-    background-color: #630100;
+    background-color: c.$arden-red;
 }
 .container {
-    color: #f1d0af;
+    color: c.$arden-cream;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "Inter", sans-serif;
@@ -86,12 +89,12 @@
 }
 .page-title {
     font-size: 2.5rem;
-    color: #f1d0af;
+    color: c.$arden-cream;
     font-family: "Inter", sans-serif;
     font-weight: bold;
 }
 .hero {
-    background-color: #410100;
+    background-color: c.$arden-red-darker;
     background-image: url("https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/65c4765c-0239-4712-de83-f8dee0626c00/public");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -100,7 +103,7 @@
     z-index: -1;
 }
 .container h2 {
-    color: #ba723b;
+    color: c.$arden-tan;
     font-size: 2em;
     font-weight: bold;
     font-family: RitzyRemix;
@@ -112,7 +115,7 @@
     --bulma-card-radius: unset;
 }
 .card-image {
-    background-color: #f1d0af;
+    background-color: c.$arden-cream;
     display: inline-block;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
@@ -127,7 +130,7 @@
     transform: scale(1.1);
 }
 .card-content {
-    background-color: #f1d0af;
+    background-color: c.$arden-cream;
     padding-top: 5px;
     position: relative;
     z-index: 2;
@@ -135,57 +138,57 @@
 .card-content .title {
     font-size: 2.7rem;
     font-family: GradoGradooNF;
-    color: #630100;
+    color: c.$arden-red;
     font-weight: bold;
     margin-bottom: 10px !important;
     margin-top: 10px !important;
 }
 .content a {
-    color: #f1d0af;
+    color: c.$arden-cream;
     text-decoration: underline;
 }
 .content a:hover {
-    color: #ba723b;
+    color: c.$arden-tan;
     text-decoration: underline;
 }
 .content h1 {
-    color: #ba723b;
+    color: c.$arden-tan;
     font-size: 2.5em;
     text-align: center;
     font-family: GradoGradooNF;
 }
 .tag-front {
-    background-color: #630100;
+    background-color: c.$arden-red;
     font-size: 1rem;
 }
 .pagination-previous {
-    background-color: #f1d0af;
-    color: #630100 !important;
+    background-color: c.$arden-cream;
+    color: c.$arden-red !important;
     margin: 4px;
     padding-left: 0.75em;
     padding-right: 0.75em;
 }
 .pagination-previous:disabled, .pagination-previous[disabled] {
-    background-color: #630100;
+    background-color: c.$arden-red;
 }
 .pagination-previous:disabled, .pagination-previous[disabled] svg {
-    color: #f1d0af;
+    color: c.$arden-cream;
 }
 .pagination-link {
-    background-color: #f1d0af;
-    color: #630100 !important;
+    background-color: c.$arden-cream;
+    color: c.$arden-red !important;
     font-weight: bold;
-    border-color: #f1d0af;
+    border-color: c.$arden-cream;
 }
 .is-current {
-    background-color: #ba723b;
-    color: #630100 !important;
+    background-color: c.$arden-tan;
+    color: c.$arden-red !important;
     font-weight: bold;
-    border-color: #ba723b;
+    border-color: c.$arden-tan;
 }
 .pagination-next {
-    background-color: #f1d0af;
-    color: #630100 !important;
+    background-color: c.$arden-cream;
+    color: c.$arden-red !important;
     margin: 4px;
     padding-left: 0.75em;
     padding-right: 0.75em;
@@ -196,22 +199,22 @@
 }
 .front-intro h1 {
     font-size: 3em;
-    color: #ba723b;
+    color: c.$arden-tan;
     font-family: RitzyRemix;
 }
 .footer {
-    background-color: #410100;
+    background-color: c.$arden-red-darker;
     padding-bottom: 3rem;
 }
 .footer p {
-    color: #ba723b;
+    color: c.$arden-tan;
 }
 .footer a {
-    color: #f1d0af;
+    color: c.$arden-cream;
     text-decoration: underline;
 }
 .footer a:hover {
-    color: #ba723b;
+    color: c.$arden-tan;
     text-decoration: underline;
 }
 .tag-list-wrapper {
@@ -223,22 +226,22 @@
 .tag-list-item {
     border: 1px solid;
     padding: 1ch 2ch;
-    color: #f1d0af;
+    color: c.$arden-cream;
 }
 .tag-list-item:hover {
-    color: #ba723b;
+    color: c.$arden-tan;
 }
 .tags {
     justify-content: center;
 }
 .tags a:hover {
-    color: #ba723b;
+    color: c.$arden-tan;
 }
 .card .tags {
     margin-top: 20px;
 }
 hr {
-    background-color: #ba723b;
+    background-color: c.$arden-tan;
 }
 .about-text {
     flex: 1;
@@ -256,7 +259,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .header-container {
-    background-color: #630100;
+    background-color: c.$arden-red;
 }
 .footer-container {
     background-color: unset;
@@ -288,13 +291,13 @@ hr {
     justify-content: center;
 }
 .buttons .is-dark {
-    background-color: #ba723b;
+    background-color: c.$arden-tan;
 }
 .buttons a {
     font-size: 1.2rem;
 }
 .buttons a:hover {
-    color: #630100;
+    color: c.$arden-red;
 }
 .post-date {
     text-align: center;
@@ -353,17 +356,17 @@ hr {
     align-items: flex-start;
 }
 .search-input {
-    border-color: #f1d0af;
-    background-color: #410100;
+    border-color: c.$arden-cream;
+    background-color: c.$arden-red-darker;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    color: #f1d0af;
+    color: c.$arden-cream;
     font-size: 1em;
 }
 .search-input::placeholder {
-    color: #f1d0af;
+    color: c.$arden-cream;
     opacity: 1;
 }
 .search-result {
