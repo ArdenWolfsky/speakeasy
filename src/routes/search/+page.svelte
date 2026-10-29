@@ -3,6 +3,8 @@
 	import SEO from '#lib/components/SEO.svelte';
 	import Borders from '#lib/components/Borders.svelte';
 	import { slugify } from '#lib/utils/posts';
+	import { CenteredImage } from 'hyperlib-but-svelte';
+	import { CDN_BASE } from '#lib/config';
 
 	let { data }: { data: PageData } = $props();
 
@@ -31,14 +33,21 @@
 
 <h1>Search</h1>
 
-<p class="centered">Looking for something specific? Search here!</p>
-<p class="centered">You can search by title or drink ingredients.</p>
+<CenteredImage
+	src="{CDN_BASE}15d5aee1-43b8-4460-a0b9-3e9e316f4600/public"
+	alt="Arden looking confused"
+	width="20%"
+/>
+
+<p class="centered">
+	Looking for something specific? Search here! <br />You can search by title or drink ingredients.
+</p>
 
 <div class="search-container">
 	<input
 		type="search"
 		class="search-input"
-		placeholder="Search for drink..."
+		placeholder="Search for a drink..."
 		aria-label="Search drinks"
 		bind:value={query}
 	/>
@@ -130,5 +139,13 @@
 
 	.tag-list-item:hover {
 		color: var(--arden-tan);
+	}
+
+	h1 {
+		margin-bottom: 15px;
+	}
+	p {
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 </style>

@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { page as pageState } from '$app/state';
 	import type { Post } from '#lib/utils/posts';
 	import PostCard from '#lib/components/PostCard.svelte';
 	import SEO from '#lib/components/SEO.svelte';
+	import { CenteredImage } from 'hyperlib-but-svelte';
+	import { CDN_BASE } from '#lib/config';
 
 	let {
 		posts,
@@ -22,13 +23,18 @@
 
 <div class="front-intro">
 	<h1>Drink Menu</h1>
-	<p>Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!</p>
-
+	<CenteredImage
+		src="{CDN_BASE}d500c126-db8a-4c03-b62c-5c48c9d81f00/public"
+		alt="Arden with his arms crossed looking smug"
+		width="20%"
+	/>
 	<p>
-		Not sure where to start? Looking for something specific? Take a look at the <a href="/search"
-			>search</a
-		> page.
+		Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!<br />
+
+		Not sure where to start? Looking for something specific? Take a look at the
+		<a href="/search">search</a> page.
 	</p>
+	<hr />
 </div>
 <div class="columns is-multiline">
 	{#each posts as post (post.slug)}
@@ -59,9 +65,14 @@
 		text-align: center;
 		font-size: 1.5rem;
 	}
+	.front-intro p {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 	.front-intro h1 {
 		font-size: 3em;
 		color: var(--arden-tan);
 		font-family: RitzyRemix;
+		margin-bottom: 15px;
 	}
 </style>
