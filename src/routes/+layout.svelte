@@ -1,5 +1,5 @@
 <script lang="ts">
-    import '../app.css';
+	import '../app.css';
 	import Hero from '#lib/components/Hero.svelte';
 	import Footer from '#lib/components/Footer.svelte';
 	import Navbar from '#lib/components/Navbar.svelte';

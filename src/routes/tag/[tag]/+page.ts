@@ -20,8 +20,6 @@ export const load: PageLoad = ({ params }) => {
 
 	return {
 		tag,
-		posts: posts.filter((post) =>
-			post.tags?.some((postTag) => slugify(postTag) === params.tag)
-		)
+		posts: posts.filter((post) => post.tags?.some((postTag) => slugify(postTag) === params.tag))
 	};
 };

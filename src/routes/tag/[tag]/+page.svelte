@@ -8,7 +8,7 @@
 	const displayTag = $derived(data.tag.replaceAll('-', ' '));
 </script>
 
-<SEO title={displayTag} noindex/>
+<SEO title={displayTag} noindex />
 
 <h1>{displayTag}</h1>
 <p class="centered">Showing all drinks that contain {displayTag}</p>

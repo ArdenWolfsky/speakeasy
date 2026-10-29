@@ -17,7 +17,7 @@ export const load: PageLoad = ({ params }) => {
 	const page = Number(params.page);
 
 	// Page 1 belongs at /
-	if (!/^[2-9]\d*$/.test(params.page)) {
+	if (!/^[1-9]\d*$/.test(params.page) || page < 2) {
 		error(404, 'Page not found');
 	}
 

@@ -15,7 +15,10 @@
 	} = $props();
 </script>
 
-<SEO title="Drink Menu" description="Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!" />
+<SEO
+	title="Drink Menu"
+	description="Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!"
+/>
 
 <div class="front-intro">
 	<h1>Drink Menu</h1>

@@ -35,10 +35,7 @@
 
 			<div class="tags">
 				{#each post.tags as tag (tag)}
-					<a
-						href={`/tag/${encodeURIComponent(slugify(tag))}/`}
-						class="tag tag-front no-underline"
-					>
+					<a href={`/tag/${encodeURIComponent(slugify(tag))}/`} class="tag tag-front no-underline">
 						{tag.replaceAll('-', ' ')}
 					</a>
 				{/each}
