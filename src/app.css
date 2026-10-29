@@ -163,16 +163,6 @@ hr {
 .footer-container {
 	background-color: unset;
 }
-.drink-image-post {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	margin-bottom: 20px;
-}
-.drink-image-post img {
-	width: 50%;
-}
 .fade-in {
 	-webkit-animation: fadein 1s;
 	-moz-animation: fadein 1s;
@@ -262,13 +252,93 @@ hr {
 	color: var(--arden-cream);
 	opacity: 1;
 }
-.search-result {
-	font-family: GradoGradooNF;
-}
-.search-result a {
-	text-decoration: none;
-	font-size: 1.5em;
-}
 .columns {
 	justify-content: center;
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		font-size: 1.2rem;
+	}
+	h1 {
+		font-size: 2.7em;
+	}
+	.section {
+		padding-top: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.page-background {
+		background-size: 60%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.content .column {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 760px) {
+	.content p,
+	.content a {
+		font-size: 1.2rem;
+	}
+	.content h1 {
+		font-size: 3em;
+	}
+	.content h2 {
+		font-size: 1.7em;
+	}
+}
+@media screen and (max-width: 700px) {
+	.container-page {
+		padding-left: 13px;
+	}
+	.section {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.page-background {
+		background-size: 80%;
+	}
+}
+@media screen and (max-width: 426px) {
+	.page-background {
+		background-size: 120%;
+	}
 }

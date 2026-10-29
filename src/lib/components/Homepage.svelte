@@ -26,7 +26,7 @@
 	<CenteredImage
 		src="{CDN_BASE}d500c126-db8a-4c03-b62c-5c48c9d81f00/public"
 		alt="Arden with his arms crossed looking smug"
-		width="20%"
+		width="clamp(200px, 20%, 400px)"
 	/>
 	<p>
 		Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!<br />
@@ -74,5 +74,21 @@
 		color: var(--arden-tan);
 		font-family: RitzyRemix;
 		margin-bottom: 15px;
+	}
+	@media screen and (max-width: 1215px) {
+		.front-intro h1 {
+			font-size: 2.5em;
+		}
+	}
+	@media screen and (max-width: 760px) {
+		.front-intro h1 {
+			font-size: 2em;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.front-intro h1 {
+			font-size: 1.7em;
+		}
 	}
 </style>

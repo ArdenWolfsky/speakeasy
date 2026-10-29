@@ -117,4 +117,15 @@
 	.page-tags {
 		margin-top: 30px;
 	}
+	@media screen and (max-width: 1200px) {
+		.post-date {
+			font-size: 1.2rem;
+		}
+		@media screen and (max-width: 768px) {
+			.post-date {
+				margin-bottom: 20px;
+				font-size: 1.3rem;
+			}
+		}
+	}
 </style>

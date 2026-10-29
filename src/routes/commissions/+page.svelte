@@ -18,7 +18,7 @@
 <CenteredImage
 	src="{CDN_BASE}ed935186-7bcc-45e0-053b-245c99016b00/public"
 	alt="Arden with stars in his eyes and mouth open"
-	width="20%"
+	width="clamp(200px, 20%, 400px)"
 />
 
 <p class="centered">Want Arden to make you a custom drink? Here is the menu below.</p>

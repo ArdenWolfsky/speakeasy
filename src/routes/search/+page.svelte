@@ -36,7 +36,7 @@
 <CenteredImage
 	src="{CDN_BASE}15d5aee1-43b8-4460-a0b9-3e9e316f4600/public"
 	alt="Arden looking confused"
-	width="20%"
+	width="clamp(200px, 20%, 400px)"
 />
 
 <p class="centered">
@@ -147,5 +147,18 @@
 	p {
 		padding-top: 15px;
 		padding-bottom: 15px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.search-result {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 1.3em;
+		}
+		@media screen and (max-width: 760px) {
+			.search-result p {
+				font-size: 1.7em;
+			}
+		}
 	}
 </style>

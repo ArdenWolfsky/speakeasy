@@ -1,20 +1,27 @@
+<script lang="ts">
+	let isActive = $state(false);
+</script>
+
 <div class="navbar">
 	<div class="container header-container">
 		<div class="navbar-brand">
 			<p>Arden Wolfsky's Speakeasy</p>
-			<a
-				role="button"
+			<button
+				type="button"
 				class="navbar-burger burger"
-				aria-label="menu"
-				aria-expanded="false"
-				data-target="navMenu"
+				class:is-active={isActive}
+				aria-label="Toggle navigation"
+				aria-controls="navMenu"
+				aria-expanded={isActive}
+				onclick={() => (isActive = !isActive)}
 			>
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
-			</a>
+				<span aria-hidden="true"></span>
+			</button>
 		</div>
-		<div class="navbar-menu" id="navMenu">
+		<div class="navbar-menu" class:is-active={isActive} id="navMenu">
 			<div class="navbar-end">
 				<a class="navbar-item" href="/">Drink Menu</a>
 				<a class="navbar-item" href="https://ardenwolfsky.com">Home</a>
@@ -52,10 +59,6 @@
 		text-transform: uppercase;
 		font-size: 2.3rem;
 	}
-	.navbar-burger a {
-		border-color: var(--arden-tan);
-		color: var(--arden-cream);
-	}
 	.navbar-burger span {
 		background-color: var(--arden-tan);
 	}
@@ -86,9 +89,14 @@
 	}
 	@media screen and (max-width: 1023px) {
 		.navbar-menu {
-			background-color: #630100;
+			background-color: var(--arden-red);
 			display: none;
 		}
+
+		.navbar-menu.is-active {
+			display: block;
+		}
+
 		.navbar-brand p {
 			padding-left: 10px;
 		}

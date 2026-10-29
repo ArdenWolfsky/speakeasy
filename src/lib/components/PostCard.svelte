@@ -83,4 +83,18 @@
 	.card .tags {
 		margin-top: 20px;
 	}
+	@media screen and (max-width: 900px) {
+		.card-content .title {
+			font-size: 1.7rem;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.card-content .title {
+			font-size: 2rem;
+		}
+		.card-image {
+			width: 100%;
+		}
+	}
 </style>
