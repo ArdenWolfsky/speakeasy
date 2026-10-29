@@ -1,0 +1,9 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
+  'hyperlib-but-svelte@git+https://codeberg.org/hyperdefined/hyperlib-but-svelte.git#9172864d8ee0af12f226547adb78cf463ee4593a': true
+
+minimumReleaseAgeExclude:
+  - svelte
+  - eslint
