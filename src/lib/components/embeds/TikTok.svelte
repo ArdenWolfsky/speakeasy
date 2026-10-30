@@ -14,7 +14,7 @@
 		title={`TikTok video by @${username}`}
 		allow="fullscreen"
 		allowfullscreen
-		loading="eager"
+		loading="lazy"
 	></iframe>
 </div>
 
