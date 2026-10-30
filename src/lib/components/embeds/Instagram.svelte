@@ -40,3 +40,10 @@
 	data-instgrm-permalink={`https://www.instagram.com/${type}/${postId}/`}
 	data-instgrm-version="14"
 ></blockquote>
+
+<style>
+	.instagram-media {
+		margin: 0 auto !important;
+		min-width: auto !important;
+	}
+</style>

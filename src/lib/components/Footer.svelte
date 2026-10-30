@@ -66,4 +66,19 @@
 		color: var(--arden-tan);
 		text-decoration: underline;
 	}
+	.footer-container {
+		background-color: unset;
+	}
+	.buttons {
+		justify-content: center;
+	}
+	.buttons .is-dark {
+		background-color: var(--arden-tan);
+	}
+	.buttons a {
+		font-size: 1.2rem;
+	}
+	.buttons a:hover {
+		color: var(--arden-red);
+	}
 </style>

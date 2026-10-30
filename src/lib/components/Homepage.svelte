@@ -4,6 +4,7 @@
 	import SEO from '#lib/components/SEO.svelte';
 	import { CenteredImage } from 'hyperlib-but-svelte';
 	import { CDN_BASE } from '#lib/config';
+	import Borders from '#lib/components/Borders.svelte';
 
 	let {
 		posts,
@@ -20,6 +21,8 @@
 	title="Drink Menu"
 	description="Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!"
 />
+
+<Borders/>
 
 <div class="front-intro">
 	<h1>Drink Menu</h1>
@@ -89,6 +92,12 @@
 	@media screen and (max-width: 600px) {
 		.front-intro h1 {
 			font-size: 1.7em;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.columns > .column {
+			flex: none;
+			width: 100%;
 		}
 	}
 </style>

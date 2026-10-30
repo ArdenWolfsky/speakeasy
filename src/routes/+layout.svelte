@@ -15,7 +15,7 @@
 	<Hero />
 {/if}
 <section class="section page-background">
-	<div class="container container-page fade-in">
+	<div class="container fade-in">
 		<div class="content">
 			{@render children()}
 		</div>

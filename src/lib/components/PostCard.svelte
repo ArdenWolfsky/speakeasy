@@ -83,6 +83,38 @@
 	.card .tags {
 		margin-top: 20px;
 	}
+
+	.left-top-border {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		transform: rotate(-180deg);
+		width: 50%;
+	}
+	.right-top-border {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 3;
+		transform: rotate(-90deg);
+		width: 50%;
+	}
+	.left-bottom-border {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 3;
+		transform: rotate(90deg);
+		width: 50%;
+	}
+	.right-bottom-border {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 3;
+		width: 50%;
+	}
 	@media screen and (max-width: 900px) {
 		.card-content .title {
 			font-size: 1.7rem;
@@ -90,12 +122,12 @@
 	}
 
 	@media screen and (max-width: 768px) {
-	.card-content .title {
-		font-size: 2rem;
-	}
+		.card-content .title {
+			font-size: 2rem;
+		}
 
-	.card-image {
-		width: 100%;
+		.card-image {
+			width: 100%;
+		}
 	}
-}
 </style>
