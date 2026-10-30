@@ -22,7 +22,7 @@
 	description="Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!"
 />
 
-<Borders/>
+<Borders />
 
 <div class="front-intro">
 	<h1>Drink Menu</h1>

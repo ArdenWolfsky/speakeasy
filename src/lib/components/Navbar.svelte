@@ -1,5 +1,11 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
+
 	let isActive = $state(false);
+
+	afterNavigate(() => {
+		isActive = false;
+	});
 </script>
 
 <div class="navbar">
