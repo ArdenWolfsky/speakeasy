@@ -1,6 +1,6 @@
 import { posts } from '#lib/utils/posts';
 
-export const POSTS_PER_PAGE = 9;
+export const POSTS_PER_PAGE = 27;
 
 export function getPaginatedPosts(page: number) {
 	const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
