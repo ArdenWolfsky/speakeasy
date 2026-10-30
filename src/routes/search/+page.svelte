@@ -150,15 +150,15 @@
 	}
 
 	@media screen and (max-width: 1200px) {
-		.search-result {
-			margin-top: 10px;
-			margin-bottom: 10px;
+		.search-result p {
 			font-size: 1.3em;
 		}
-		@media screen and (max-width: 760px) {
-			.search-result p {
-				font-size: 1.7em;
-			}
+	}
+	@media screen and (max-width: 760px) {
+		.search-result p {
+			font-size: 1.1em;
+			padding-top: 5px;
+			padding-bottom: 0px;
 		}
 	}
 </style>

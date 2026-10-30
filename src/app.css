@@ -28,21 +28,7 @@
 .tiktok-embed::after {
 	display: none !important;
 }
-.youtube-iframe {
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-	box-sizing: border-box;
-}
 
-.youtube-iframe iframe {
-	width: 100%;
-	max-width: 365px;
-	aspect-ratio: 9 / 16;
-	height: auto;
-	border: none;
-	display: block;
-}
 .bluesky-iframe {
 	display: flex;
 	justify-content: center;
@@ -337,6 +323,12 @@ hr {
 	}
 	.page-background {
 		background-size: 80%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.columns > .column {
+		flex: none;
+		width: 100%;
 	}
 }
 @media screen and (max-width: 426px) {

@@ -90,11 +90,12 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		.card-content .title {
-			font-size: 2rem;
-		}
-		.card-image {
-			width: 100%;
-		}
+	.card-content .title {
+		font-size: 2rem;
 	}
+
+	.card-image {
+		width: 100%;
+	}
+}
 </style>

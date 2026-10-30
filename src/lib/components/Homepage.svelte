@@ -36,9 +36,9 @@
 	</p>
 	<hr />
 </div>
-<div class="columns is-multiline">
+<div class="columns is-multiline is-mobile">
 	{#each posts as post (post.slug)}
-		<div class="column is-4">
+		<div class="column is-6-mobile is-6-tablet is-4-desktop">
 			<PostCard {post} />
 		</div>
 	{/each}

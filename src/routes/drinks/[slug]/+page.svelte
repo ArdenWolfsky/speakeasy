@@ -121,11 +121,11 @@
 		.post-date {
 			font-size: 1.2rem;
 		}
-		@media screen and (max-width: 768px) {
-			.post-date {
-				margin-bottom: 20px;
-				font-size: 1.3rem;
-			}
+	}
+	@media screen and (max-width: 768px) {
+		.post-date {
+			margin-bottom: 20px;
+			font-size: 1.3rem;
 		}
 	}
 </style>
